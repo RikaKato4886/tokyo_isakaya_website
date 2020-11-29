@@ -1,3 +1,42 @@
+.navbar {
+  background-color: #AC1515; }
 
+.navbar-brand {
+  color: white; }
+
+.custom-toggler.navbar-toggler {
+  border-color: white; }
+
+.nav-link {
+  font-family: 'Sawarabi Mincho', sans-serif; }
+
+.nav-logo {
+  width: 10rem; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.top {
+  margin: 0 auto; }
+
+.top-image {
+  background-image: url(../src/fake-top.jpg);
+  background-size: cover;
+  height: 70vh;
+  object-fit: cover;
+  position: relative; }
+
+.top-text {
+  letter-spacing: 3px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: 55%;
+  right: 5%; }
+
+.top-text-box {
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */
