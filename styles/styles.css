@@ -18,8 +18,10 @@
   padding: 0px;
   box-sizing: border-box; }
 
-.top {
-  margin: 0 auto; }
+.top-items {
+  margin: 0 auto;
+  height: 60vh;
+  padding: 40px 20px; }
 
 .top-image {
   background-image: url(../src/fake-top.jpg);
@@ -29,14 +31,28 @@
   position: relative; }
 
 .top-text {
+  text-align: center;
   letter-spacing: 3px;
-  font-family: 'Sawarabi Mincho', sans-serif;
+  font-family: 'Sawarabi Mincho', sans-serif; }
+
+.top-text-box {
+  color: white;
   font-weight: 500;
   position: absolute;
   top: 55%;
   right: 5%; }
 
-.top-text-box {
-  color: white; }
+.corona-info-container .corona-title {
+  margin: 0 auto;
+  width: 20rem;
+  margin-bottom: 30px; }
+  .corona-info-container .corona-title h4 {
+    color: white;
+    text-align: center;
+    background-color: #AC1515;
+    font-size: 1rem;
+    padding: 6px 5px; }
+.corona-info-container .corona-detail {
+  border: solid 2px black; }
 
 /*# sourceMappingURL=styles.css.map */
