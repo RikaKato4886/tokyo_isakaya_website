@@ -19,16 +19,19 @@
   box-sizing: border-box; }
 
 .top-items {
-  margin: 0 auto;
-  height: 60vh;
-  padding: 40px 20px; }
+  margin: 0 auto; }
 
 .top-image {
-  background-image: url(../src/fake-top.jpg);
   background-size: cover;
+  object-fit: cover; }
+
+.top-image-first {
+  background-image: url(../src/fake-top.jpg);
   height: 70vh;
-  object-fit: cover;
   position: relative; }
+
+.top-image-second {
+  background-image: url(../src/41580.jpg); }
 
 .top-text {
   text-align: center;
@@ -42,17 +45,34 @@
   top: 55%;
   right: 5%; }
 
-.corona-info-container .corona-title {
-  margin: 0 auto;
-  width: 20rem;
-  margin-bottom: 30px; }
-  .corona-info-container .corona-title h4 {
-    color: white;
-    text-align: center;
-    background-color: #AC1515;
-    font-size: 1rem;
-    padding: 6px 5px; }
-.corona-info-container .corona-detail {
-  border: solid 2px black; }
+.corona-info-container {
+  padding: 40px 80px; }
+  .corona-info-container .corona-title {
+    margin: 0 auto;
+    width: 20rem;
+    margin-bottom: 30px; }
+    .corona-info-container .corona-title h4 {
+      color: white;
+      text-align: center;
+      background-color: #AC1515;
+      font-size: 1rem;
+      padding: 6px 5px; }
+  .corona-info-container .corona-detail {
+    border: solid 2px black; }
+
+.top-message-image {
+  padding: 40px 70px; }
+
+.top-message-box {
+  background-color: rgba(31, 30, 30, 0.5);
+  color: white; }
+  .top-message-box h2 {
+    margin-bottom: 30px; }
+
+.wrap {
+  display: flex; }
+
+.wrap:nth-child(even) {
+  flex-direction: row-reverse; }
 
 /*# sourceMappingURL=styles.css.map */

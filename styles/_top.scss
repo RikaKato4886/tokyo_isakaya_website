@@ -10,16 +10,19 @@
 
 .top-items {
   margin: 0 auto;
-  height: 60vh;
-  padding: 40px 20px;
 }
 
 .top-image {
-  background-image: url(../src/fake-top.jpg);
   background-size: cover;
-  height: 70vh;
   object-fit: cover;
+}
+.top-image-first{
+  background-image: url(../src/fake-top.jpg);
+  height: 70vh;
   position: relative;
+}
+.top-image-second{
+  background-image: url(../src/41580.jpg);
 }
 
 .top-text {
@@ -37,7 +40,7 @@
 }
 
 .corona-info-container{
-
+  padding: 40px 80px;
   .corona-title{
     margin: 0 auto;
     width: 20rem;
@@ -52,5 +55,17 @@
   }
   .corona-detail{
     border: solid 2px black;
+  }
+}
+
+.top-message-image{
+  padding: 40px 70px;
+}
+
+.top-message-box {
+  background-color: rgba(31, 30, 30, 0.5);
+  color: white;
+  h2{
+    margin-bottom: 30px;
   }
 }
