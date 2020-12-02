@@ -1,7 +1,23 @@
 .wrap{
   display: flex;
+  img{
+    width: 20rem;
+    border-radius: 5px;
+  }
+  p{
+    padding: 10px 30px 0 30px;
+  }
 }
 
 .wrap:nth-child(even){
   flex-direction: row-reverse;
+}
+
+.foodmenu-container{
+  padding: 50px 70px;
+  background-image: url(../src/japanese-paper_00147.jpg);
+  div{
+    text-align: center;
+    margin-bottom: 22px;
+  }
 }
