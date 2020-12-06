@@ -84,21 +84,21 @@
       <div><p>名物！赤手羽揚げ<br>みりん、砂糖を一切使わず、醤油と厳選した調味料で5時間漬け込んだ絶品手羽揚げです。</p></div>
     </div>
     <div class="wrap">
-      <div><img src="./src/teba-1.jpg"></div>
       <div><p>名物！赤手羽揚げ<br>みりん、砂糖を一切使わず、醤油と厳選した調味料で5時間漬け込んだ絶品手羽揚げです。</p></div>
+      <div><img src="./src/teba-1.jpg"></div>
     </div>
     <div class="wrap">
       <div><img src="./src/teba-1.jpg"></div>
       <div><p>名物！赤手羽揚げ<br>みりん、砂糖を一切使わず、醤油と厳選した調味料で5時間漬け込んだ絶品手羽揚げです。</p></div>
     </div>
 
-    <button>その他のメニューはこちらから</button>
+    <button class="btn menuButton">その他のメニューはこちらから</button>
 
   <!--- Ippin & Otegaru 以下隠す--->
   <div class="menu-container">
-    <h3>一品料理</h3>
+    <img src="src/ippinryori.png">
 
-    <div class="menu-list-container" style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+    <div class="menu-list-container">
       <div class="menu-list">
         <dl>
           <dt>厚揚げ焼き</dt>
@@ -141,7 +141,7 @@
           <dd>550円</dd>
         </dl>
       </div>
-      <div class="manu-list">
+      <div class="menu-list">
         <dl>
           <dt>キムチグラタン</dt>
           <dd>550円</dd>
@@ -179,13 +179,55 @@
           <dd>???円</dd>
         </dl>
       </div>
+      <div class="menu-list">
+        <dl>
+          <dt>厚揚げ焼き</dt>
+          <dd>450円</dd>
+        </dl>
+        <dl>
+          <dt>厚揚げ煮</dt>
+          <dd>450円</dd>
+        </dl>
+        <dl>
+          <dt>豆腐ステーキきのこあんかけ</dt>
+          <dd>550円</dd>
+        </dl>
+        <dl>
+          <dt>鳥玉きのこあんかけ</dt>
+          <dd>550円</dd>
+        </dl>
+        <dl>
+          <dt>鳥と葱の炒め物(タレor塩)</dt>
+          <dd>500円</dd>
+        </dl>
+        <dl>
+          <dt>豚キムチ炒め</dt>
+          <dd>550円</dd>
+        </dl>
+        <dl>
+          <dt>漬物チャンプル</dt>
+          <dd>500円</dd>
+        </dl>
+        <dl>
+          <dt>豚しゃぶ香味ソース</dt>
+          <dd>500円</dd>
+        </dl>
+        <dl>
+          <dt>ポテトフライ</dt>
+          <dd>480円</dd>
+        </dl>
+        <dl>
+          <dt>焼き鳥グラタン</dt>
+          <dd>550円</dd>
+        </dl>
+      </div>
     </div>
   </div>
 
   <div class="menu-container">
     <h3>お手軽料理</h3>
 
-    <div class="menu-list-container" style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+    <div class="menu-list-container">
       <div class="menu-list">
         <dl>
           <dt>冷奴</dt>
@@ -228,7 +270,7 @@
           <dd>380円</dd>
         </dl>
       </div>
-      <div class="manu-list">
+      <div class="menu-list">
         <dl>
           <dt>自家製ピクルス</dt>
           <dd>400円</dd>
@@ -244,46 +286,20 @@
       </div>
     </div>
   </div>
-  <div class="menu-container">
-    <h3>サラダ</h3>
-    <div class="menu-list-container" style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
-      <div class="menu-list">
-        <dl>
-          <dt>そばサラダ</dt>
-          <dd>500円</dd>
-        </dl>
-        <dl>
-          <dt>ラーメンサラダ</dt>
-          <dd>500円</dd>
-        </dl>
-        <dl>
-          <dt>ポテトサラダ</dt>
-          <dd>400円</dd>
-        </dl>
-        <dl>
-          <dt>鶏皮サラダ</dt>
-          <dd>500円</dd>
-        </dl>
-        <dl>
-          <dt>玉子サラダ</dt>
-          <dd>500円</dd>
-        </dl>
-      </div>
-    </div>
-  </div>
   </section>
 
   <!--  DRINK MENU  -->
-  <section class="drinkmenu-container">
-    <h2>お飲み物</h2>
+  <section class="foodmenu-container">
+    <div><img src="src/onomimono.png"></div>
     <div>おすすめのドリンクメニューを写真で</div>
-    <!--  おすすめのドリンクメニューを写真で  -->
-    <button>その他のメニューはこちらから(クリックで以下表示)</button>
-    <div class="menu-container">
-      <!-- <h3>ビール</h3> -->
-      <div class="menu-list-container" style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+    <img src="src/hoppi.jpeg">
+
+    <button class="btn drink-Button">その他のメニューはこちらから(クリックで以下表示)</button>
+
+    <div class="drink-menu-container">
+      <img src="src/ippinryori.png">
+      <div class="menu-list-container">
         <div class="menu-list">
-          <h3>ビール</h3>
           <dl>
             <dt>エビス生ビール中</dt>
             <dd>500円</dd>
@@ -536,5 +552,6 @@
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
 </html>
