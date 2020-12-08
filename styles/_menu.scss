@@ -48,12 +48,39 @@
 
 }
 
-// @media (min-width: 850px) {/*415px 〜 959px*/
-//   .wrap{
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
+.menu_area{
+  background-image: url(../src/04-polish-wood.png);
+  height: 90vh;
+  padding: 60px 0;
+}
 
-// @media (min-width: 960px) {/*960px 〜*/
-  
-// }
+.menu_list{
+  padding: 20px 40px;
+}
+
+.categories{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  list-style: none;
+  li{
+    border: #c0bebe 1px solid;
+    border-radius: 3px;
+    height: 100px;
+    padding: 20px 20px;
+    .category{
+      width: 100%;
+      margin-top: 10px;
+
+    }
+    .photo{
+    }
+    .text{
+      background-color: lightgray;
+      color: #7F7469;
+      vertical-align: middle;
+      margin-top: 15px;
+    }
+  }
+}
