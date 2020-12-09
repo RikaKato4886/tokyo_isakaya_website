@@ -21,7 +21,7 @@
 }
 
 .menu-container{
-  display: none;
+  // display: none;
   img{
     margin: 30px 0;
   }
@@ -49,9 +49,9 @@
 }
 
 .menu_area{
-  background-image: url(../src/04-polish-wood.png);
-  height: 90vh;
-  padding: 60px 0;
+  // background-image: url(../src/04-polish-wood.png);
+  height: 50vh;
+  padding: 30px 0;
 }
 
 .menu_list{
@@ -68,19 +68,32 @@
     border: #c0bebe 1px solid;
     border-radius: 3px;
     height: 100px;
-    padding: 20px 20px;
+    padding: 10px 10px;
+    background: white;
     .category{
       width: 100%;
       margin-top: 10px;
+      display: grid;
+      grid-template-columns: 50% 1fr;
+      align-items: center;
+      justify-content: center;
+      background-color: #f3eee8;
 
     }
     .photo{
+      img{
+        width: 80%;
+        height: 70px;
+        // margin-left: 10px;
+      }
+
     }
     .text{
-      background-color: lightgray;
       color: #7F7469;
       vertical-align: middle;
-      margin-top: 15px;
+      .fas{
+        // background-color: #AC1515;
+      }
     }
   }
 }
