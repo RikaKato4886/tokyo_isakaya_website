@@ -20,13 +20,6 @@
   }
 }
 
-.menu-container{
-  // display: none;
-  img{
-    margin: 30px 0;
-  }
-}
-
 .drink-menu-container{
   display: none;
   img{
@@ -49,13 +42,25 @@
 }
 
 .menu_area{
-  // background-image: url(../src/04-polish-wood.png);
+  color: #faf0e0;
   height: 50vh;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 
-.menu_list{
+.menu-list{
   padding: 20px 40px;
+  color: #7F7469;
+  letter-spacing: 2px;
+}
+
+.menu-container{
+  background-color: #f7f4f0;
+  padding: 20px 10px;
+  .menu-title {
+    margin: 0 auto;
+    text-align: center;
+
+  }
 }
 
 .categories{
@@ -71,26 +76,36 @@
     padding: 10px 10px;
     background: white;
     .category{
+      text-decoration: none;
+      color: #7F7469;
       width: 100%;
-      margin-top: 10px;
       display: grid;
       grid-template-columns: 50% 1fr;
       align-items: center;
       justify-content: center;
       background-color: #f3eee8;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all  0.3s ease;
 
+    }
+    .category:hover{
+      background-color: #ecc89c;
+      color: white;
     }
     .photo{
       img{
         width: 80%;
         height: 70px;
+        object-fit: cover;
         // margin-left: 10px;
       }
 
     }
     .text{
-      color: #7F7469;
       vertical-align: middle;
+      letter-spacing: 1px;
       .fas{
         // background-color: #AC1515;
       }
