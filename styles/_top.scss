@@ -23,7 +23,7 @@
   position: relative;
 }
 .top-image-second{
-  background-image: url(../src/41580.jpg);
+  background-image: url(../src/inside1.jpg);
 }
 
 .top-text {
@@ -41,6 +41,7 @@
 }
 
 .corona-info-container{
+  background-color: $main-cream;
   padding: 40px 80px;
   .corona-title{
     margin: 0 auto;
@@ -66,7 +67,9 @@
 .top-message-box {
   background-color: rgba(31, 30, 30, 0.5);
   color: white;
+  padding: 35px 30px;
   h2{
     margin-bottom: 30px;
   }
 }
+

@@ -1,31 +1,62 @@
-.wrap{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  img{
-    width: 20rem;
-    border-radius: 5px;
-  }
-  p{
-    padding: 10px 20px 0 20px;
-  }
-}
+/////////////// FOOD MENU AREA  //////////////////////
 
 .foodmenu-container{
-  padding: 50px 50px;
-  background-image: url(../src/japanese-paper_00147.jpg);
-  div{
+  padding: 30px 0;
+  // background-color: #f7f4f0;
+  // background-image: url(../src/patternpad2.jpeg);
+  // background-repeat: no-repeat;
+  // background-image:  repeating-linear-gradient(45deg, #b99882 25%, transparent 25%, transparent 75%, #b99882 75%, #b99882), repeating-linear-gradient(45deg, #b99882 25%, white 25%, white 75%, #b99882 75%, #b99882);
+  // background-position: 0 0, 16px 16px;
+  // background-size: 32px 32px;
+  .foodmenu-title{
     text-align: center;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
   }
 }
 
-.drink-menu-container{
-  display: none;
+.wrap{
+  margin-bottom: 60px;
   img{
-    margin: 30px 0;
+    width: 25rem;
+    border-radius: 3px;
+    margin-left: 0;
+    padding: 0 20px;
+    z-index: 10;
+  }
+  p, h4{
+    padding: 10px 20px 0 40px;
   }
 }
+
+.menu-photo{
+  margin-bottom: 22px;
+}
+
+.menu-left{
+  text-align: left;
+}
+
+.menu-right{
+  text-align: right;
+}
+
+.menu-detail{
+  letter-spacing: 2px;
+  color: #3D3D3D;
+  font-family: YuMincho, sans-serif;
+  z-index: -10;
+
+  h4{
+    font-size: 36px;
+    font-weight: 800;
+    color: $main-red;
+  }
+}
+
+.menu-detail-right{
+  text-align: right;
+}
+
 
 .menu-list-container {
   display: grid;
@@ -38,19 +69,68 @@
   border-bottom: solid 1px $title-brown;
   background: none;
   padding: 10px 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn span {
+  z-index: 1;
+  position: relative;
 
 }
 
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 140px;
+  // border-radius: 50%;
+  transform: translate3d(-50%,-50%,0) scale3d(0,0,0);
+  transition: opacity .4s cubic-bezier(.19,1,.22,1),transform .75s cubic-bezier(.19,1,.22,1);
+  background-color: #925e3e;
+  opacity: 0;
+}
+
+.btn:hover span {
+  color: white;
+}
+
+.btn:hover::before {
+  opacity: 1;
+  transition-duration: .85s;
+  transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
+}
+
+// Menu Page!!! //
+
+.link-top{
+  font-family: 'Noto Sans JP', sans-serif;;
+  margin: 0;
+  // background-color: #c5b596;
+  font-size: 13px;
+  padding: 3px 5px;
+  color: black;
+  li{
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+
 .menu_area{
   color: #faf0e0;
-  height: 50vh;
   padding: 30px 10px;
+  text-align: center;
 }
 
 .menu-list{
   padding: 20px 40px;
   color: #7F7469;
   letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 .menu-container{
@@ -88,7 +168,6 @@
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all  0.3s ease;
-
     }
     .category:hover{
       background-color: #ecc89c;
@@ -101,14 +180,28 @@
         object-fit: cover;
         // margin-left: 10px;
       }
-
     }
     .text{
       vertical-align: middle;
       letter-spacing: 1px;
-      .fas{
-        // background-color: #AC1515;
-      }
     }
+  }
+}
+.menu-additional-box{
+  margin: 40px auto;
+}
+.additional-box{
+  margin: 0 auto;
+  background-color: white;
+  width: 70%;
+  padding: 3px 5px;
+  color: #4b4a4a;
+  background-image: repeating-linear-gradient(0deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(90deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(180deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(270deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px);
+  background-size: 3px calc(100% + 20px), calc(100% + 20px) 3px, 3px calc(100% + 20px) , calc(100% + 20px) 3px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  animation: borderAnimation 1s infinite linear;
+  p{
+    margin: 10px 10px;
   }
 }

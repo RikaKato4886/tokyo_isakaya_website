@@ -1,33 +1,56 @@
-// const menuBtn = document.querySelector('.menuButton');
-// const drinkBtn = document.querySelector('.drink-Button');
+///////////////////  LP Animation  //////////////////
 
-// const showMenu = () => {
-//   const menuDivs = document.querySelectorAll('.menu-container');
+ScrollReveal().reveal('.top-text-box',{delay: 200});
+ScrollReveal({ reset: true }).reveal('.top-image-second', {delay: 200});
+ScrollReveal({ reset: true }).reveal('.foodmenu-title', {delay: 200});
+ScrollReveal({ reset: true }).reveal('.wrap', {delay: 200});
 
-//   menuDivs.forEach((div) => {
-//     // div.style.display = "block"
-//     if(div.style.display === "none"){
-//       div.style.display = "block";
-//     } else{
-//       div.style.display = "none";
-//     }
 
-//   })
-// }
+///////////////////  MENU  //////////////////
 
-// const drinkMenu = () =>  {
-//   const drinkDivs = document.querySelectorAll('.drink-menu-container');
+// Get the modal
+const modals = document.querySelectorAll(".modal");
+// Get the button that opens the modal
+const openModalBtns = document.querySelectorAll(".modal-open");
+// Get btn-close
+const closeBtns = document.querySelectorAll(".btn-close");
+//Get modal cover
+const modalCovers = document.querySelectorAll('.modal-cover')
 
-//   drinkDivs.forEach((div) => {
+//モーダルを閉じる処理
+const closeModal = () => {
+  modals.forEach((modal)=>{
+  modal.classList.add('is-close')
+  modal.classList.remove('is-open')
+  modal.classList.remove('is-close')
+  })
+};
 
-//     if(div.style.display === "none"){
-//       div.style.display = "block";
-//     } else{
-//       div.style.display = "none";
-//     }
+// 外の範囲クリックでmodalを閉じる
+window.onclick = (e) => {
+  modalCovers.forEach((modalCover) => {
+    if(e.target === modalCover){
+      closeModal();
+    }
+  });
+};
 
-//   })
-// }
+// モーダル開くボタンクリックでmodalを開く
+openModalBtns.forEach((openModalBtn) => {
+  openModalBtn.addEventListener('click', () => {
+    const clikedOpenBtn = openModalBtn.getAttribute('data-modal-open');
+    modals.forEach((modal) => { //もしも同じNumの場合
+      const modalDataNum = modal.getAttribute('data-modal');
+      if(modalDataNum === clikedOpenBtn){
+        modal.classList.add('is-open')
+      }
+    })
+  })
+});
 
-// menuBtn.addEventListener('click', showMenu);
-// drinkBtn.addEventListener('click', drinkMenu);
+// グレーのcloseボタンクリックでmodalを閉じる
+closeBtns.forEach((closeBtn) => {
+  closeBtn.addEventListener('click', () => {
+    closeModal();
+  });
+});
