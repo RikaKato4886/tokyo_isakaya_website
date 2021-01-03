@@ -73,7 +73,9 @@
     margin-bottom: 30px; }
 
 .foodmenu-container {
-  padding: 30px 0; }
+  padding: 30px 0;
+  background-image: url(../src/wa-background1.jpg);
+  background-size: cover; }
   .foodmenu-container .foodmenu-title {
     text-align: center;
     margin-bottom: 30px; }
@@ -326,8 +328,8 @@
 .footer-container {
   background-color: #8c7851;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px 10px; }
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 30px; }
 
 .footer-one img {
   margin-bottom: 20px; }
