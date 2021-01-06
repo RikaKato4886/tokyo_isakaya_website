@@ -36,10 +36,7 @@
           <a class="nav-link text-white" href="index.html">ホーム</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">お食事</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">お飲み物</a>
+          <a class="nav-link text-white" href="menu.html" target="_blank">お品書き</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="#">店舗情報</a>
@@ -47,26 +44,28 @@
       </ul>
     </div>
   </nav>
+
   <!-- link (to TOP)-->
   <section class="link-container">
     <div>
       <ol class="link-top">
-        <li><a href="index.html">TOP</a> ></li>
+        <li><a href="index.html" style="text-decoration: none;">TOP</a> ></li>
         <li>メニュー</li>
       </ol>
     </div>
   </section>
 
   <!-- Menu -->
-  <section class="menu_area pattern-checks-md">
+  <section class="menu_area">
     <div class="menu_list">
+      <div><img src="src/oshinagaki-logo.png" style="margin-bottom: 2rem;"></div>
       <ul class="categories">
         <li>
           <div class="modal-open" data-modal-open="modal-1">
             <a href="#" class="category">
               <div class="photo"><img src="src/maguro.jpg"></div>
               <div class="text">
-                <span><i class="fas fa-chevron-circle-left"></i></span>
+                <span><i class="fas fa-chevron-circle-right"></i></span>
                 <span>一品料理</span>
               </div>
               </a>
@@ -78,7 +77,7 @@
             <a href="#" class="category">
               <div class="photo"><img src="src/katsuobushi.jpg"></div>
               <div class="text">
-                <span><i class="fas fa-chevron-circle-left"></i></span>
+                <span><i class="fas fa-chevron-circle-right"></i></span>
                 <span>お手軽料理</span>
               </div>
               </a>
@@ -89,7 +88,7 @@
           <a href="#" class="category modal-open" data-modal-open="modal-3">
           <div class="photo"><img src="src/sarada1.jpg"></div>
           <div class="text">
-            <span><i class="fas fa-chevron-circle-left"></i></span>
+            <span><i class="fas fa-chevron-circle-right"></i></span>
             <span>サラダ</span>
           </div>
           </a>
@@ -98,7 +97,7 @@
           <a href="#" class="category modal-open" data-modal-open="modal-4">
           <div class="photo"><img src="src/hoppi.jpeg"></div>
           <div class="text">
-            <span><i class="fas fa-chevron-circle-left"></i></span>
+            <span><i class="fas fa-chevron-circle-right"></i></span>
             <span>お飲み物</span>
           </div>
           </a>
@@ -108,7 +107,7 @@
 
     <div class="menu-additional-box">
       <div class="additional-box">
-        <p>上記以外にも、その日のおすすめ料理がございます。ご来店の際には、お気軽にスタッフまでお声かけ下さい。</p>
+        <p class="additional-text">上記以外にも、その日のおすすめ料理がございます。ご来店の際には、お気軽にスタッフまでお声かけ下さい。</p>
       </div>
     </div>
   </section>
@@ -200,7 +199,7 @@
           </dl>
         </div>
         <div class="btn-wrap">
-          <a  href="#" class="btn btn-close btn-gray">Close</a>
+          <a  href="#" class="btn btn-close btn-gray"><span>Close</span></a>
         </div>
       </div>
     </div>
@@ -210,7 +209,7 @@
     <div class="modal-cover"></div>
     <div class="modal-inner">
       <div class="menu-container modal-content">
-        <div class="menu-title"><img src="src/ippinryori.png"></div>
+        <div class="menu-title"><img src="src/tegaru-logo.png"></div>
         <div class="menu-list">
           <dl>
             <dt>冷奴</dt>
@@ -268,7 +267,227 @@
           </dl>
         </div>
         <div class="btn-wrap">
-          <a  href="#" class="btn btn-close btn-gray">Close</a>
+          <a  href="#" class="btn btn-close btn-gray"><span>Close</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" data-modal="modal-3">
+    <div class="modal-cover"></div>
+    <div class="modal-inner">
+      <div class="menu-container modal-content">
+        <div class="menu-title"><img src="src/salad-logo.png"></div>
+        <div class="menu-list">
+          <dl>
+            <dt>そばサラダ</dt>
+            <dd>500円</dd>
+          </dl>
+          <dl>
+            <dt>ラーメンサラダ</dt>
+            <dd>500円</dd>
+          </dl>
+          <dl>
+            <dt>ポテトサラダ</dt>
+            <dd>400円</dd>
+          </dl>
+          <dl>
+            <dt>鳥皮サラダ</dt>
+            <dd>500円</dd>
+          </dl>
+          <dl>
+            <dt>たまごサラダ</dt>
+            <dd>500円</dd>
+          </dl>
+        </div>
+
+        <div class="btn-wrap">
+          <a  href="#" class="btn btn-close btn-gray"><span>Close</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" data-modal="modal-4">
+    <div class="modal-cover"></div>
+    <div class="modal-inner">
+      <div class="menu-container modal-content">
+        <div class="menu-title"><img src="src/nomimono-logo.png"></div>
+        <div class="menu-list">
+          <dl>
+            <dt>エビス生ビール中</dt>
+            <dd>500円</dd>
+          </dl>
+          <dl>
+            <dt>サッポロ黒ラベル中瓶</dt>
+            <dd>600円</dd>
+          </dl>
+          <dl>
+            <dt>ホッピー黒</dt>
+            <dd>300円</dd>
+          </dl>
+          <dl>
+            <dt>ホッピー白</dt>
+            <dd>300円</dd>
+          </dl>
+          <dl>
+            <dt>ホッピー中身</dt>
+            <dd>200円</dd>
+          </dl>
+          <dl>
+            <dt>ホッピー中身ダブル</dt>
+            <dd>400円</dd>
+          </dl>
+          <dl>
+            <dt>角ハイボール</dt>
+            <dd>550円</dd>
+          </dl>
+          <dl>
+            <dt>ハーパーハイボール</dt>
+            <dd>600円</dd>
+          </dl>
+          <dl>
+            <dt>赤ハイボール</dt>
+            <dd>600円</dd>
+          </dl>
+          <br> <!--行をかえる--->
+          <br>
+          <h3>梅酒</h3>
+          <dl>
+            <dt>澄み渡る梅酒</dt>
+            <dd>400円</dd>
+          </dl>
+          <dl>
+            <dt>白加賀梅酒</dt>
+            <dd>400円</dd>
+          </dl>
+          <dl>
+            <dt>赤梅酒</dt>
+            <dd>450円</dd>
+          </dl>
+          <dl>
+            <dt>黒糖梅酒</dt>
+            <dd>450円</dd>
+          </dl>
+          <dl>
+            <dt>梅酒玉露割り</dt>
+            <dd>500円</dd>
+          </dl>
+        </div>
+        <div class="menu-list">
+          <br>
+          <br>
+          <dl>
+            <dt>サントリー角瓶</dt>
+            <dd>500円</dd>
+          </dl>
+          <dl>
+            <dt>サントリー白州</dt>
+            <dd>650円</dd>
+          </dl>
+          <dl>
+            <dt>ジョニーウォーカー(赤)</dt>
+            <dd>600円</dd>
+          </dl>
+          <dl>
+            <dt>I.Wハーバー</dt>
+            <dd>600円</dd>
+          </dl>
+          <dl>
+            <dt>焼酎ハイボール</dt>
+            <dd>400円</dd>
+          </dl>
+          <dl>
+            <dt>びっきぃハイボール</dt>
+            <dd>400円</dd>
+          </dl>
+          <dl>
+            <dt>生レモンハイボール</dt>
+            <dd>450円</dd>
+          </dl>
+          <dl>
+            <dt>生グレープフルーツハイボール</dt>
+            <dd>450円</dd>
+          </dl>
+          <dl>
+            <dt>レモンハイボール</dt>
+            <dd>400円</dd>
+          </dl>
+          <br> <!--行をかえる--->
+          <br>
+          <h3>焼酎</h3>
+          <dl>
+            <dt>宝焼酎 純 (甲類)</dt>
+            <dd>400円(ボトル 2000円)</dd>
+          </dl>
+          <dl>
+            <dt>知心剣 (麦)</dt>
+            <dd>500円(ボトル 2500円)</dd>
+          </dl>
+          <dl>
+            <dt>和ら麦 (麦)</dt>
+            <dd>500円(ボトル 2400円)</dd>
+          </dl>
+          <dl>
+            <dt>一刻者 (芋)</dt>
+            <dd>500円(ボトル 2500円)</dd>
+          </dl>
+          <dl>
+            <dt>からり芋 (芋)</dt>
+            <dd>500円(ボトル 2400円)</dd>
+          </dl>
+          <dl>
+            <dt>黒糖酒 (黒糖)</dt>
+            <dd>500円</dd>
+          </dl>
+          <dl>
+            <dt>瑞穂 (泡盛)</dt>
+            <dd>500円(ボトル2500円)</dd>
+          </dl>
+          <dl>
+            <dt>菊の露40度
+            *ボトルもご用意しております</dt>
+          </dl>
+        </div>
+        <div class="menu-list">
+          <br>
+          <br>
+          <dl>
+            <dt>シークワーサーハイボール</dt>
+            <dd>450円</dd>
+          </dl>
+          <dl>
+            <dt>ワインハイボール(赤 or 白)</dt>
+            <dd>400円</dd>
+          </dl>
+          <dl>
+            <dt>カルピスハイボール</dt>
+            <dd>400円</dd>
+          </dl>
+          <dl>
+            <dt>ウコンウーロンハイ</dt>
+            <dd>400円</dd>
+          </dl>
+          <dl>
+            <dt>玉露ハイ</dt>
+            <dd>450円</dd>
+          </dl>
+          <dl>
+            <dt>ジャスミンハイ</dt>
+            <dd>450円</dd>
+          </dl>
+          <br> <!--行をかえる--->
+          <br>
+          <br>
+          <br>
+          <h3>焼酎</h3>
+          <dl>
+            <dt>宝焼酎 純 (甲類)</dt>
+            <dd>400円(ボトル 2000円)</dd>
+          </dl>
+        </div>
+        <div class="btn-wrap">
+          <a  href="#" class="btn btn-close btn-gray"><span>Close</span></a>
         </div>
       </div>
     </div>
@@ -277,7 +496,7 @@
 <!-- FOOTER -->
 <section class="footer-container">
   <div class="footer-one">
-    <div><img src="src/bikki-logo.png"></div>
+    <div><img src="src/bikki-logo-brown.png"></div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7621.833635320185!2d139.7155941207223!3d35.778715634280864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018931c96664567%3A0x29a0773965804214!2z6aOf5qW944Gz44Gj44GN44GD!5e0!3m2!1sja!2sjp!4v1608526748142!5m2!1sja!2sjp" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
 
@@ -308,6 +527,7 @@
       </div>
   </div>
 </section>
+<div class="footer-bottom">COPYRIGHT Bikki All Rights Reserved.</div>
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
