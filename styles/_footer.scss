@@ -1,5 +1,5 @@
 .footer-container{
-  background-color: #8c7851;
+  background-color: $warm-brown;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 30px 30px;
@@ -12,10 +12,17 @@
 }
 
 .footer-three{
-  color: white;
+  color: #7F7469;
   font-size: 15px;
   font-family: YuMincho, sans-serif;
   font-weight: 600;
   padding: 20px 20px;
+}
+
+@media only screen and (max-width:600px) {
+  .footer-container{
+    grid-template-columns: 1fr;
+    padding: 30px 30px;
+  }
 }
 

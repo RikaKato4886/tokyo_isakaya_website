@@ -51,7 +51,7 @@
   padding: 40px 80px; }
   .corona-info-container .corona-title {
     margin: 0 auto;
-    width: 20rem;
+    width: 70%;
     margin-bottom: 30px; }
     .corona-info-container .corona-title h4 {
       color: white;
@@ -152,15 +152,20 @@
   transition-duration: .85s;
   transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1); }
 
-.link-top {
-  font-family: 'Noto Sans JP', sans-serif;
-  margin: 0;
-  font-size: 13px;
-  padding: 3px 5px;
-  color: black; }
-  .link-top li {
-    display: inline-block;
-    text-decoration: none; }
+.link-container {
+  background-color: #eaddcf; }
+  .link-container .link-top {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    font-size: 13px;
+    padding: 5px 15px;
+    color: #4b4a4a; }
+    .link-container .link-top li {
+      display: inline-block;
+      color: #4b4a4a; }
+      .link-container .link-top li a {
+        text-decoration: none;
+        color: #4b4a4a; }
 
 .menu_area {
   color: #faf0e0;
@@ -325,7 +330,7 @@
     transform: translateY(-20px);
     opacity: 0; } }
 .footer-container {
-  background-color: #8c7851;
+  background-color: #eaddcf;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 30px 30px; }
@@ -334,10 +339,15 @@
   margin-bottom: 20px; }
 
 .footer-three {
-  color: white;
+  color: #7F7469;
   font-size: 15px;
   font-family: YuMincho, sans-serif;
   font-weight: 600;
   padding: 20px 20px; }
+
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 30px 30px; } }
 
 /*# sourceMappingURL=styles.css.map */

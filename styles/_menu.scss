@@ -102,20 +102,29 @@
   transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
 }
 
-// Menu Page!!! //
+/////////////////////// Menu Page!!! /////////////////////////
 
-.link-top{
-  font-family: 'Noto Sans JP', sans-serif;;
-  margin: 0;
-  // background-color: #c5b596;
-  font-size: 13px;
-  padding: 3px 5px;
-  color: black;
-  li{
-    display: inline-block;
-    text-decoration: none;
+.link-container{
+  background-color: $warm-brown;
+  .link-top{
+    font-family: 'Noto Sans JP', sans-serif;;
+    margin: 0;
+    // background-color: #c5b596;
+    font-size: 13px;
+    padding: 5px 15px;
+    color: #4b4a4a;
+    li{
+      display: inline-block;
+      color: #4b4a4a;
+      // pointer-events: none;
+      a {
+        text-decoration: none;
+        color: #4b4a4a;
+      }
+    }
   }
 }
+
 
 
 .menu_area{
@@ -201,3 +210,4 @@
     margin: 10px 10px;
   }
 }
+
