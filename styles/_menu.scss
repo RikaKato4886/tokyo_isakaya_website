@@ -156,6 +156,7 @@
   column-gap: 10px;
   row-gap: 10px;
   list-style: none;
+  padding: 0 50px;
   li{
     border: #c0bebe 1px solid;
     border-radius: 3px;
@@ -208,6 +209,19 @@
   background-repeat: no-repeat;
   p{
     margin: 10px 10px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .categories{
+  grid-template-columns: 1fr;
+    li{
+      height: 150px;
+      margin-bottom: 15px;
+    }
+  }
+  .category{
+    height: 100%;
   }
 }
 

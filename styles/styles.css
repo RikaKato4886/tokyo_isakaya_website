@@ -190,7 +190,8 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
   row-gap: 10px;
-  list-style: none; }
+  list-style: none;
+  padding: 0 50px; }
   .categories li {
     border: #c0bebe 1px solid;
     border-radius: 3px;
@@ -236,6 +237,15 @@
   .additional-box p {
     margin: 10px 10px; }
 
+@media only screen and (max-width: 600px) {
+  .categories {
+    grid-template-columns: 1fr; }
+    .categories li {
+      height: 150px;
+      margin-bottom: 15px; }
+
+  .category {
+    height: 100%; } }
 .photo-container {
   padding: 30px 20px;
   text-align: center; }
