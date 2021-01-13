@@ -1,7 +1,6 @@
 ///////////////////  LP Animation  //////////////////
 
-ScrollReveal().reveal('.top-text-box',{delay: 200});
-ScrollReveal({ reset: true }).reveal('.top-image-second', {delay: 200});
+ScrollReveal({ reset: true }).reveal('.top-text',{delay: 200});
 ScrollReveal({ reset: true }).reveal('.foodmenu-title', {delay: 200});
 ScrollReveal({ reset: true }).reveal('.wrap', {delay: 200});
 
