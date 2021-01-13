@@ -3,7 +3,7 @@
 .foodmenu-container{
   padding: 30px 0;
   // background-color: #f7f4f0;
-  background-image: url(../src/wa-background1.jpg);
+  background-image: url(../src/jppaper-1.jpg);
   background-size: cover;
 
   .foodmenu-title{
@@ -41,12 +41,10 @@
 .menu-detail{
   letter-spacing: 2px;
   color: #3D3D3D;
-  font-family: YuMincho, sans-serif;
   z-index: -10;
 
   h4{
-    font-size: 36px;
-    font-weight: 800;
+    font-weight: 400;
     color: $main-red;
   }
 }
