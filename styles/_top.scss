@@ -31,9 +31,13 @@
 
 
 .top-image-second{
+  height: auto;
   background-image: url(../src/inside1.jpg);
   position: relative;
-  padding: 30px;
+  padding: 50px;
+  z-index: -1;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .top-image-second::after {
@@ -44,6 +48,7 @@
   left: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
+  z-index: -1;
 }
 
 .top-text {
@@ -62,14 +67,15 @@
     margin-bottom: 2rem;
   }
   p{
-    line-height: 30px;
+    line-height: 40px;
+    letter-spacing: 10px;
   }
 }
 
 .corona-info-container{
   background-image: url(../src/jppaper-1.jpg);
-  padding: 40px 80px;
-  height: 70vh;
+  padding: 70px 40px;
+  height: auto;
   .corona-title{
     margin: 0 auto;
     margin-bottom: 20px;
@@ -78,14 +84,19 @@
       text-align: center;
       font-size: 1.2rem;
       padding: 6px 5px;
-      // max-width: 80%;
     }
   }
   .corona-detail{
+    text-align: center;
     padding: 20px 20px;
     line-height: 40px;
     margin: 0 auto;
-    // max-width: 90%;
+    p{
+      letter-spacing: 2px;
+      i{
+        color: $main-red;
+      }
+    }
   }
 }
 
@@ -96,13 +107,14 @@
 .top-message-box {
   z-index: 100;
   color: white;
-  padding: 35px 30px;
+  padding: 40px 10px;
   h2{
-    margin-bottom: 30px;
-    z-index: 10;
+    font-size: 3rem;
+    margin-bottom: 3.2rem;
   }
   p{
-    line-height: 35px;
+    line-height: 50px;
+    max-width: 770px;
   }
 }
 
