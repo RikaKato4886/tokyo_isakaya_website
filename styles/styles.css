@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #852e19; }
+  background-color: #7a2813f3; }
 
 .navbar-brand {
   color: white; }
@@ -84,7 +84,7 @@
     margin: 0 auto;
     margin-bottom: 20px; }
     .corona-info-container .corona-title h4 {
-      color: #852e19;
+      color: #7a2813f3;
       text-align: center;
       font-size: 1.2rem;
       padding: 6px 5px; }
@@ -96,7 +96,7 @@
     .corona-info-container .corona-detail p {
       letter-spacing: 2px; }
       .corona-info-container .corona-detail p i {
-        color: #852e19; }
+        color: #7a2813f3; }
 
 .top-message-image {
   padding: 40px 50px; }
@@ -121,7 +121,7 @@
     margin-bottom: 30px; }
     .foodmenu-container .foodmenu-title h2 {
       font-size: 3rem;
-      color: #852e19; }
+      color: #7a2813f3; }
 
 .wrap {
   margin-bottom: 60px;
@@ -153,7 +153,7 @@
   padding-top: 30px; }
   .menu-detail h4 {
     font-weight: 400;
-    color: #852e19; }
+    color: #7a2813f3; }
 
 .menu-detail-right {
   text-align: right; }
@@ -398,7 +398,7 @@
     transform: translateY(-20px);
     opacity: 0; } }
 .footer-container {
-  background-color: #852e19;
+  background-color: #7a2813f3;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 30px 30px; }
