@@ -3,8 +3,11 @@
   text-align: center;
   background-image: url(../src/jppaper-4.jpg);
   background-size: auto;
+  .tenpo-logo{
+    width: 30%;
+    margin-bottom: 30px;
+  }
 }
-//4 or
 
 .carousel {
   padding: 15px 3rem;
@@ -26,7 +29,7 @@
 }
 
 .card iframe {
-  height: 500px;
+  height: 450px;
 }
 
 .video-text{
