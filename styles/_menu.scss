@@ -241,11 +241,11 @@
   .categories{
   grid-template-columns: 1fr;
     li{
-      height: 150px;
+      height: 300px;
       margin-bottom: 15px;
       .photo{
         img{
-          height: 80px;
+          height: 150px;
         }
       }
       .text{
