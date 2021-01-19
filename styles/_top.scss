@@ -152,6 +152,19 @@
 }
 
 @media only screen and (max-width:350px) {
-
+.footer-container{
+  text-align: none;
+}
+.footer-one{
+  img{
+    width: 70%;
+  }
+}
+.footer-three{
+  padding: 20px 5px;
+}
+.iframe-map{
+  width: 60%;
+}
 }
 

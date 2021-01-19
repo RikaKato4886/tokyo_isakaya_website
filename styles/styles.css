@@ -135,6 +135,18 @@
       line-height: 50px;
       max-width: 770px;
       padding: 50px 0; } }
+@media only screen and (max-width: 350px) {
+  .footer-container {
+    text-align: none; }
+
+  .footer-one img {
+    width: 70%; }
+
+  .footer-three {
+    padding: 20px 5px; }
+
+  .iframe-map {
+    width: 60%; } }
 .foodmenu-container {
   padding: 80px 0;
   background-image: url(../src/jppaper-1.jpg);
@@ -189,7 +201,6 @@
   text-align: center; }
 
 .btn {
-  width: 50%;
   border-top: solid 1px #6B3311;
   border-bottom: solid 1px #6B3311;
   background: #663d24;
@@ -222,6 +233,12 @@
   opacity: 1;
   transition-duration: .85s;
   transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1); }
+
+.menuButton {
+  width: 60%; }
+
+.btn-close {
+  width: 20%; }
 
 .link-container {
   background-color: #c9bca3; }
@@ -256,12 +273,14 @@
   .menu-container .menu-title {
     margin: 0 auto;
     text-align: center; }
+    .menu-container .menu-title img {
+      width: 70%; }
 
 .categories {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 10px;
-  row-gap: 40px;
+  row-gap: 80px;
   list-style: none;
   padding: 20px 50px; }
   .categories li {
@@ -321,21 +340,24 @@
       width: 85%; }
 
   .categories {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    column-gap: 10px; }
     .categories li {
       height: 300px;
       margin-bottom: 15px; }
       .categories li .photo img {
         height: 150px; }
-
-  .category {
-    height: 100%; }
+      .categories li .text {
+        font-size: 20px; }
+      .categories li .category {
+        height: 100%;
+        grid-template-columns: none; }
 
   .foodmenu-title img {
     width: 80%; }
 
-  .btn {
-    width: 80%; } }
+  .btn-close {
+    width: 100%; } }
 .photo-container {
   padding: 30px 20px;
   text-align: center;
@@ -471,5 +493,9 @@
     grid-template-columns: 1fr;
     padding: 30px 30px;
     text-align: center; } }
+@media only screen and (max-width: 350px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 30px 5px; } }
 
 /*# sourceMappingURL=styles.css.map */

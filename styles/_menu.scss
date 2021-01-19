@@ -75,7 +75,6 @@
 }
 
 .btn{
-  width: 50%;
   border-top: solid 1px $title-brown;
   border-bottom: solid 1px $title-brown;
   background: #663d24;
@@ -113,6 +112,14 @@
   opacity: 1;
   transition-duration: .85s;
   transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
+}
+
+.menuButton{
+  width: 60%;
+}
+
+.btn-close{
+  width: 20%;
 }
 
 /////////////////////// Menu Page!!! /////////////////////////
@@ -157,7 +164,9 @@
   .menu-title {
     margin: 0 auto;
     text-align: center;
-
+    img{
+      width: 70%;
+    }
   }
 }
 
@@ -165,7 +174,7 @@
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 10px;
-  row-gap: 40px;
+  row-gap: 80px;
   list-style: none;
   padding: 20px 50px;
 
@@ -229,6 +238,7 @@
   }
 }
 
+
 @media only screen and (max-width:600px) {
   .wrap{
     margin-bottom: 60px;
@@ -240,6 +250,7 @@
 
   .categories{
   grid-template-columns: 1fr;
+  column-gap: 10px;
     li{
       height: 300px;
       margin-bottom: 15px;
@@ -249,20 +260,24 @@
         }
       }
       .text{
+        font-size: 20px;
+      }
+      .category{
+        height: 100%;
+        grid-template-columns: none;
       }
     }
   }
-  .category{
-    height: 100%;
-  }
+
 
   .foodmenu-title{
     img{
       width: 80%;
     }
   }
-  .btn{
-    width: 80%;
+
+  .btn-close{
+    width: 100%;
   }
 }
 

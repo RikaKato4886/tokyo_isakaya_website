@@ -33,3 +33,11 @@
   }
 }
 
+@media only screen and (max-width:350px) {
+  .footer-container{
+    grid-template-columns: 1fr;
+    padding: 30px 5px;
+  }
+}
+
+
