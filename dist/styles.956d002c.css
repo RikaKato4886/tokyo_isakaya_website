@@ -110,7 +110,8 @@
     margin-bottom: 3.2rem; }
   .top-message-box p {
     line-height: 50px;
-    max-width: 770px; }
+    max-width: 770px;
+    padding: 50px 0; }
 
 .foodmenu-container {
   padding: 60px 0;
@@ -127,7 +128,7 @@
   margin-bottom: 60px;
   padding: 50px 0; }
   .wrap img {
-    width: 0%;
+    width: 60%;
     border-radius: 3px;
     margin-left: 0; }
   .wrap p, .wrap h4 {
@@ -201,7 +202,7 @@
   transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1); }
 
 .link-container {
-  background-color: #eaddcf; }
+  background-color: #c9bca3; }
   .link-container .link-top {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
@@ -218,7 +219,8 @@
 .menu_area {
   color: #faf0e0;
   padding: 30px 10px;
-  text-align: center; }
+  text-align: center;
+  background-image: url(/jppaper-3.5231a5d2.jpg); }
 
 .menu-list {
   padding: 20px 40px;
@@ -235,47 +237,51 @@
 
 .categories {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 10px;
-  row-gap: 10px;
+  row-gap: 40px;
   list-style: none;
-  padding: 0 50px; }
+  padding: 20px 50px; }
   .categories li {
     border: #c0bebe 1px solid;
     border-radius: 3px;
-    height: 100px;
-    padding: 10px 10px;
-    background: white; }
+    height: 300px;
+    padding: 20px 20px;
+    background: #FBFAF8;
+    position: relative; }
     .categories li .category {
+      padding: 10px 10px;
+      border: #424141 5px solid;
       text-decoration: none;
-      color: #7F7469;
+      color: #424141;
       width: 100%;
+      height: 100%;
       display: grid;
       grid-template-columns: 50% 1fr;
       align-items: center;
       justify-content: center;
-      background-color: #f3eee8;
+      background-color: #FBFAF8;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all  0.3s ease; }
     .categories li .category:hover {
-      background-color: #ecc89c;
+      background-color: #c9bca3;
       color: white; }
     .categories li .photo img {
       width: 80%;
-      height: 70px;
+      height: 150px;
       object-fit: cover; }
     .categories li .text {
       vertical-align: middle;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      font-size: 2rem; }
 
 .menu-additional-box {
   margin: 40px auto; }
 
 .additional-box {
   margin: 0 auto;
-  background-color: white;
   width: 70%;
   padding: 3px 5px;
   color: #4b4a4a;
@@ -290,21 +296,29 @@
     margin-bottom: 60px;
     padding: 50px 0; }
     .wrap img {
-      width: 100%; }
+      width: 85%; }
 
   .categories {
     grid-template-columns: 1fr; }
     .categories li {
       height: 150px;
       margin-bottom: 15px; }
+      .categories li .photo img {
+        height: 80px; }
 
   .category {
-    height: 100%; } }
+    height: 100%; }
+
+  .foodmenu-title img {
+    width: 80%; } }
 .photo-container {
   padding: 30px 20px;
   text-align: center;
   background-image: url(/jppaper-4.56e373a0.jpg);
   background-size: auto; }
+  .photo-container .tenpo-logo {
+    width: 30%;
+    margin-bottom: 30px; }
 
 .carousel {
   padding: 15px 3rem; }
@@ -319,7 +333,7 @@
   background-size: auto; }
 
 .card iframe {
-  height: 500px; }
+  height: 450px; }
 
 .video-text {
   margin-top: 20px;
@@ -409,13 +423,12 @@
 .footer-three {
   color: #eeecec;
   font-size: 15px;
-  font-family: YuMincho, sans-serif;
   font-weight: 600;
   padding: 20px 20px; }
 
 .footer-bottom {
   text-align: center;
-  background-color: #8c7851;
+  background-color: #c9bca3;
   padding: 5px 0; }
 
 @media only screen and (max-width: 600px) {
