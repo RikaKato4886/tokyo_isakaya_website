@@ -34,7 +34,7 @@
   height: auto;
   background-image: url(../src/inside1.jpg);
   position: relative;
-  padding: 50px;
+  padding: 60px 20px;
   z-index: -1;
   margin: 0 auto;
   text-align: center;
@@ -56,21 +56,23 @@
   letter-spacing: 3px;
   z-index: 100;
 }
-
-.top-text-box{
-  color: white;
-  font-weight: 500;
-  position: absolute;
-  top: 55%;
-  right: 5%;
-  h2{
-    margin-bottom: 2rem;
-  }
-  p{
-    line-height: 40px;
-    letter-spacing: 10px;
-  }
+  .top-text-box{
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    h2{
+      margin-bottom: 2rem;
+      font-size: 3rem;
+    }
+    p{
+      font-size: 1.5rem;
+      line-height: 50px;
+      letter-spacing: 13px;
+    }
 }
+
 
 .corona-info-container{
   background-image: url(../src/jppaper-1.jpg);
@@ -114,8 +116,42 @@
   }
   p{
     line-height: 50px;
-    max-width: 770px;
+    // max-width: 770px;
     padding: 50px 0;
   }
+}
+
+@media only screen and (max-width:600px) {
+
+  .top-text-box{
+    right: 0%;
+    h2{
+      font-size: 2.2rem;
+    }
+    p{
+      font-size: 1.2rem;
+      letter-spacing: 9px;
+    }
+  }
+
+  .top-message-box {
+    z-index: 100;
+    color: white;
+    padding: 0px 0px;
+    h2{
+      font-size: 2rem;
+      line-height: 50px;
+      margin-bottom: 5px;
+    }
+    p{
+      line-height: 50px;
+      max-width: 770px;
+      padding: 50px 0;
+    }
+  }
+}
+
+@media only screen and (max-width:350px) {
+
 }
 
