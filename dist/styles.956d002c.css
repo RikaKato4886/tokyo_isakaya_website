@@ -44,7 +44,7 @@
   height: auto;
   background-image: url(/inside1.099b7c50.jpg);
   position: relative;
-  padding: 50px;
+  padding: 60px 20px;
   z-index: -1;
   margin: 0 auto;
   text-align: center; }
@@ -68,13 +68,15 @@
   color: white;
   font-weight: 500;
   position: absolute;
-  top: 55%;
+  top: 45%;
   right: 5%; }
   .top-text-box h2 {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-size: 3rem; }
   .top-text-box p {
-    line-height: 40px;
-    letter-spacing: 10px; }
+    font-size: 1.5rem;
+    line-height: 50px;
+    letter-spacing: 13px; }
 
 .corona-info-container {
   background-image: url(/jppaper-1.6023fdfd.jpg);
@@ -110,11 +112,46 @@
     margin-bottom: 3.2rem; }
   .top-message-box p {
     line-height: 50px;
-    max-width: 770px;
     padding: 50px 0; }
 
+@media only screen and (max-width: 600px) {
+  .top-text-box {
+    right: 0%; }
+    .top-text-box h2 {
+      font-size: 2.2rem; }
+    .top-text-box p {
+      font-size: 1.2rem;
+      letter-spacing: 9px; }
+
+  .top-message-box {
+    z-index: 100;
+    color: white;
+    padding: 0px 0px; }
+    .top-message-box h2 {
+      font-size: 2rem;
+      line-height: 50px;
+      margin-bottom: 5px; }
+    .top-message-box p {
+      line-height: 50px;
+      max-width: 770px;
+      padding: 50px 0; }
+
+  .corona-info-container {
+    padding: 70px 20px; } }
+@media only screen and (max-width: 350px) {
+  .footer-container {
+    text-align: none; }
+
+  .footer-one img {
+    width: 70%; }
+
+  .footer-three {
+    padding: 20px 5px; }
+
+  .iframe-map {
+    width: 60%; } }
 .foodmenu-container {
-  padding: 60px 0;
+  padding: 80px 0;
   background-image: url(/jppaper-1.6023fdfd.jpg);
   background-size: auto; }
   .foodmenu-container .foodmenu-title {
@@ -153,7 +190,7 @@
   z-index: -10;
   padding-top: 30px; }
   .menu-detail h4 {
-    font-weight: 400;
+    font-weight: 600;
     color: #7a2813f3; }
 
 .menu-detail-right {
@@ -167,11 +204,10 @@
   text-align: center; }
 
 .btn {
-  width: 50%;
   border-top: solid 1px #6B3311;
   border-bottom: solid 1px #6B3311;
-  background: #925e3e;
-  padding: 10px 0;
+  background: #663d24;
+  padding: 10px 20px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -201,6 +237,12 @@
   transition-duration: .85s;
   transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1); }
 
+.menuButton {
+  width: 60%; }
+
+.btn-close {
+  width: 20%; }
+
 .link-container {
   background-color: #c9bca3; }
   .link-container .link-top {
@@ -218,13 +260,13 @@
 
 .menu_area {
   color: #faf0e0;
-  padding: 30px 10px;
+  padding: 30px 60px;
   text-align: center;
   background-image: url(/jppaper-3.5231a5d2.jpg); }
 
 .menu-list {
   padding: 20px 40px;
-  color: #7F7469;
+  color: #5c4e40;
   letter-spacing: 2px;
   margin-bottom: 10px; }
 
@@ -234,18 +276,20 @@
   .menu-container .menu-title {
     margin: 0 auto;
     text-align: center; }
+    .menu-container .menu-title img {
+      width: 70%; }
 
 .categories {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 10px;
-  row-gap: 40px;
+  row-gap: 80px;
   list-style: none;
   padding: 20px 50px; }
   .categories li {
     border: #c0bebe 1px solid;
     border-radius: 3px;
-    height: 300px;
+    height: 400px;
     padding: 20px 20px;
     background: #FBFAF8;
     position: relative; }
@@ -270,7 +314,7 @@
       color: white; }
     .categories li .photo img {
       width: 80%;
-      height: 150px;
+      height: 250px;
       object-fit: cover; }
     .categories li .text {
       vertical-align: middle;
@@ -298,19 +342,29 @@
     .wrap img {
       width: 85%; }
 
+  .menu_area {
+    padding: 30px 20px; }
+
   .categories {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    padding: 20px 20px; }
     .categories li {
-      height: 150px;
+      height: 300px;
       margin-bottom: 15px; }
       .categories li .photo img {
-        height: 80px; }
-
-  .category {
-    height: 100%; }
+        height: 150px; }
+      .categories li .text {
+        font-size: 20px; }
+      .categories li .category {
+        height: 100%;
+        grid-template-columns: none; }
 
   .foodmenu-title img {
-    width: 80%; } }
+    width: 80%; }
+
+  .btn-close {
+    width: 100%; } }
 .photo-container {
   padding: 30px 20px;
   text-align: center;
@@ -323,8 +377,8 @@
 .carousel {
   padding: 15px 3rem; }
 
-.carousel-text-container .carousel-text span {
-  font-size: smaller; }
+.detail-text {
+  font-size: 20px; }
 
 .video-container {
   padding: 35px 40px 50px 40px;
@@ -333,12 +387,21 @@
   background-size: auto; }
 
 .card iframe {
-  height: 450px; }
+  height: 550px; }
 
 .video-text {
   margin-top: 20px;
   font-size: smaller; }
 
+@media only screen and (max-width: 600px) {
+  .photo-container .tenpo-logo {
+    width: 40%; }
+
+  .card iframe {
+    height: 300px; }
+
+  .detail-text {
+    font-size: 14px; } }
 .modal {
   position: fixed;
   display: flex;
@@ -429,13 +492,18 @@
 .footer-bottom {
   text-align: center;
   background-color: #c9bca3;
-  padding: 5px 0; }
+  padding: 5px 0;
+  font-size: 10px; }
 
 @media only screen and (max-width: 600px) {
   .footer-container {
     grid-template-columns: 1fr;
     padding: 30px 30px;
     text-align: center; } }
+@media only screen and (max-width: 350px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 30px 5px; } }
 
 
 

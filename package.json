@@ -3,7 +3,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "scripts": {
-    "dev": "parcel <index.html menu.html>",
-    "build": "parcel build <index.html menu.html>"
+    "dev": "parcel <index.html>",
+    "build": "parcel build <index.html>"
   }
 }
