@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +22,10 @@
   <!---NAV 1 -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand text-white" href="/index.html"><img src="/bikki-logo.9d00ec20.png" class="nav-logo d-inline-block align-top" alt=""></a>
+    <div>
+      <a href="#jp" data-reload="">日本語</a>
+      <a href="#en" data-reload="">ENGLISH</a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,17 +49,17 @@
   <div class="top-container">
     <section class="top-image top-image-first">
       <div class="top-text top-text-box">
-        <h2>今日もお疲れ様でした</h2>
-        <p>裏赤羽で今日は一杯、<br>一緒にいかがですか？</p>
+        <h2 id="otsukare">今日もお疲れ様でした</h2>
+        <p id="otsukare_p">裏赤羽で今日は一杯、<br>一緒にいかがですか？</p>
       </div>
     </section>
 
     <!--Corona Information -->
     <section class="top-items corona-info-container">
       <div class="top-text corona-title">
-        <h4>新型コロナ[COVID-19]への対策について</h4>
+        <h4 id="corona_h4">新型コロナ[COVID-19]への対策について</h4>
       </div>
-      <div class="corona-detail">
+      <div id="corona_detail">
         <p><i class="fas fa-head-side-mask"></i>  マスク・フェイスガード着用の徹底</p>
         <p><i class="fas fa-people-arrows"></i>  客席間隔1メートルの確保</p>
         <p><i class="fas fa-wind"></i>  店内における定期的な換気</p>

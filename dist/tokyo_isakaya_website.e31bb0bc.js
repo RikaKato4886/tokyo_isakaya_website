@@ -118,6 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
+// import Polyglot from 'node-polyglot';
 ///////////////////  LP Animation  //////////////////
 ScrollReveal({
   reset: true
@@ -138,7 +139,7 @@ ScrollReveal({
   reset: true
 }).reveal('.wrap', {
   delay: 200
-}); ///////////////////  MENU  //////////////////
+}); ///////////////////  Modal  //////////////////
 // Get the modal
 
 var modals = document.querySelectorAll(".modal"); // Get the button that opens the modal
@@ -185,7 +186,70 @@ closeBtns.forEach(function (closeBtn) {
   closeBtn.addEventListener('click', function () {
     closeModal();
   });
-});
+}); /////////////  Multilingual  //////////
+// class TranslationApp {
+//   constructor() {
+//     this.polyglot = new Polyglot();
+//     this.currentLocale = localStorage.getItem("locale" || "ja");
+//     this.updateLocale = this.updateLocale.bind(this);
+//   }
+//   setup() {
+//     if (this.currentLocale === "ja"){
+//       this.polyglot.extend({
+//         "message":"こんにちは、世界",
+//       });
+//     } else {
+//       this.polyglot.extend({
+//         "message":"Hello, World",
+//       });
+//     }
+//   }
+//   updateLocale(e) {
+//     //ボタンにセットされたdata-localeを元に現在のlocaleを変更します。
+//     const clickedlocale = e.target.dataset.locale;
+//     localStorage.setItem("locale", clickedlocale);
+//     this.currentLocale = clickedlocale;
+//     console.log(this.currentLocale)
+//     this.showMessage();
+//   }
+//   showMessage() {
+//     this.setup()
+//     this.polyglot.t('message');
+//     // const mainEl = document.getElementById('main');
+//     // mainEl.innerHTML = `
+//     // <h1>
+//     //   ${this.polyglot.t('message')}
+//     // <h1>
+//     // `;
+//   }
+// };
+// {
+//   const app = new TranslationApp();
+//   // console.log(app)
+//   // app.setup();
+//   app.showMessage();
+//   const button1 = document.getElementById('button1');
+//   button1.addEventListener("click", app.updateLocale);
+//   const button2 = document.getElementById('button2');
+//   button2.addEventListener("click", app.updateLocale);
+// }
+//language translation
+
+var language = {
+  en: {
+    otsukare: "Hello, Welcome to Bikki.",
+    otsukare_p: "why don't we <br>drink together tonight?",
+    corona_h4: "Measurement against COVID-19"
+  }
+}; //define language via hash..
+
+if (window.location.hash) {
+  if (window.location.hash === "#en") {
+    otsukare.textContent = language.en.otsukare;
+    otsukare_p.textContent = language.en.otsukare_p;
+    corona_h4.textContent = language.en.corona_h4;
+  }
+}
 },{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -214,7 +278,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57812" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65518" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
