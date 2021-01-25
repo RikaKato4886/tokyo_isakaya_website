@@ -3,14 +3,18 @@
   text-align: center;
   background-image: url(../src/jppaper-4.jpg);
   background-size: auto;
-  .tenpo-logo{
-    width: 30%;
-    margin-bottom: 30px;
+  text-align: center;
+  .text-center {
+    margin: 30px auto;
+    color: $main-red;
+    letter-spacing: 10px;
+    font-size: 3rem;
   }
 }
 
 .carousel {
-  padding: 15px 3rem;
+  margin-top: 30px;
+  padding: 20px 3rem;
 }
 
 .detail-text{
@@ -35,8 +39,8 @@
 
 @media only screen and (max-width:600px) {
   .photo-container {
-    .tenpo-logo{
-      width: 40%;
+    .text-center{
+      font-size: 2rem;
     }
   }
 
