@@ -56,7 +56,7 @@ closeBtns.forEach((closeBtn) => {
   });
 });
 
-/////////////  Multilingual  //////////
+/////////////  Multilingual Setting  //////////
 
 // class TranslationApp {
 //   constructor() {
@@ -119,7 +119,7 @@ const dataReload = document.querySelectorAll("[data-reload]");
 const language = {
   en: {
     otsukare: "Hi, Welcome to Bikki.",
-    otsukare_p: "why don't we drink together tonight?",
+    otsukare_p: "we are a small Isakaya at Akabane in Tokyo",
     corona_h4: "Measures against COVID-19",
     corona_mask: "Mask / Face-guard",
   }
