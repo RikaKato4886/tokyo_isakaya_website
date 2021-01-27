@@ -158,8 +158,11 @@
     text-align: center;
     margin-bottom: 30px; }
     .foodmenu-container .foodmenu-title h2 {
-      font-size: 3rem;
-      color: #7a2813f3; }
+      margin: 30px auto;
+      color: #7a2813f3;
+      letter-spacing: 10px;
+      font-weight: 800;
+      font-size: 3rem; }
 
 .wrap {
   margin-bottom: 60px;
@@ -336,6 +339,9 @@
     margin: 10px 10px; }
 
 @media only screen and (max-width: 600px) {
+  .foodmenu-container .foodmenu-title h2 {
+    font-size: 2rem; }
+
   .wrap {
     margin-bottom: 60px;
     padding: 50px 0; }
@@ -369,13 +375,17 @@
   padding: 30px 20px;
   text-align: center;
   background-image: url(/jppaper-4.56e373a0.jpg);
-  background-size: auto; }
-  .photo-container .tenpo-logo {
-    width: 30%;
-    margin-bottom: 30px; }
+  background-size: auto;
+  text-align: center; }
+  .photo-container .text-center {
+    margin: 30px auto;
+    color: #7a2813f3;
+    letter-spacing: 10px;
+    font-size: 3rem; }
 
 .carousel {
-  padding: 15px 3rem; }
+  margin-top: 30px;
+  padding: 20px 3rem; }
 
 .detail-text {
   font-size: 20px; }
@@ -394,8 +404,8 @@
   font-size: smaller; }
 
 @media only screen and (max-width: 600px) {
-  .photo-container .tenpo-logo {
-    width: 40%; }
+  .photo-container .text-center {
+    font-size: 2rem; }
 
   .card iframe {
     height: 300px; }
