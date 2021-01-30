@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <!-- このファイルページのcss file -->
   <link rel="stylesheet" href="/styles.956d002c.css">
-<script src="/styles.956d002c.js"></script><script src="/menu.js"></script></head>
+</head>
 <body>
 
   <!---NAV 1 -->
@@ -57,54 +57,69 @@
     <!--Corona Information -->
     <section class="top-items corona-info-container">
       <div class="top-text corona-title">
-        <h4 id="corona1">新型コロナ[COVID-19]への対策について</h4>
+        <h2 id="corona1">新型コロナ[COVID-19]への対策について</h2>
       </div>
       <div class="corona-detail">
-        <p id="corona_mask"><i class="fas fa-head-side-mask"></i>  マスク・フェイスガード着用の徹底</p>
-        <p><i class="fas fa-people-arrows"></i>  客席間隔1メートルの確保</p>
-        <p><i class="fas fa-wind"></i>  店内における定期的な換気</p>
-        <p><i class="fas fa-virus-slash"></i>  定期的な店内設備の除菌徹底</p>
+        <div>
+          <i class="fas_corona fas fa-head-side-mask"></i><p id="corona_mask"> マスク・フェイスガード着用の徹底</p>
+        </div>
+        <div>
+          <i class="fas_corona fas fa-people-arrows"></i><p id="corona_space">  客席間隔1メートルの確保</p>
+        </div>
+        <div>
+          <i class="fas_corona fas fa-wind"></i>
+          <p id="corona_air"> 店内における定期的な換気</p>
+        </div>
+        <div>
+          <i class="fas_corona fas fa-virus-slash"></i>
+          <p id="corona_clean"> 定期的な店内設備の除菌徹底</p>
+        </div>
       </div>
     </section>
 
     <!--TOP IMAGE -->
     <section class="top-image top-image-second">
         <div class="top-text top-message-box">
-          <h2>裏赤羽の隠れ家へようこそ</h2>
-          <p>赤羽にどんなイメージをお持ちでしょうか？<br>赤羽のお店は一人では入りにくい・・そんな経験のある方も多いと思います。<br>当店は赤羽の喧騒から少し離れた場所にある、赤羽らしくも落ち着いたお店です。<br>どこか懐かしく、ここでしか味わえない料理をおもてなし致します。</p>
+          <h2 id="youkoso_h2">裏赤羽の隠れ家へようこそ</h2>
+          <p id="youkoso_one">赤羽にどんなイメージをお持ちでしょうか？</p>
+          <p id="youkoso_two">赤羽のお店は一人では入りにくい・・そんな経験のある方も多いと思います。</p>
+          <p id="youkoso_three">当店は赤羽の喧騒から少し離れた場所にある、赤羽らしくも落ち着いたお店です。</p>
+          <p id="youkoso_four">どこか懐かしく、ここでしか味わえない料理をおもてなし致します。</p>
         </div>
     </section>
   </div>
 
   <!--- Food MENU --->
   <section class="foodmenu-container">
-    <div class="foodmenu-title each-title"><h2>びっきぃのおすすめ</h2></div>
+    <div class="foodmenu-title each-title"><h2 id="osusume">びっきぃのおすすめ</h2></div>
 
   <!--- Osusume Image& Message --->
     <div class="wrap">
       <div class="menu-photo menu-left"><img src="/teba-1.d592d0aa.jpg" alt="手羽先画像"></div>
       <div class="menu-detail">
-        <h4>びっきぃ名物 赤手羽揚げ</h4>
-        <p>みりん、砂糖を一切使わず、醤油と厳選した調味料で5時間漬け込んだ絶品手羽揚げです。</p>
+        <h4 id="recommend1">びっきぃ名物 赤手羽揚げ</h4>
+        <p id="recommend1_detail">みりん、砂糖を一切使わず、醤油と厳選した調味料で5時間漬け込んだ絶品手羽揚げです。</p>
       </div>
     </div>
     <div class="wrap">
       <div class="menu-photo menu-right"><img src="/pickles.df1e3e6b.jpg"></div>
       <div class="menu-detail menu-detail-right">
-        <h4>自家製ピクルス</h4>
-        <p>お代わり続出！さわやかな自家製のピクルスです。</p>
+        <h4 id="recommend2">自家製ピクルス</h4>
+        <p id="recommend2_detail">お代わり続出！さわやかな自家製のピクルスです。</p>
       </div>
     </div>
 
     <div class="another-menu">
-      <a href="/menu.html" target="”_blank”"><button class="btn menuButton"><span>その他のメニューはこちらから   <i class="fas fa-chevron-circle-right"></i></span></button></a>
+      <a href="/menu.html" target="”_blank”"><button class="btn menuButton"><span id="menu_link">その他のメニューはこちらから   </span><i class="fas fa-chevron-circle-right"></i>
+      </button>
+      </a>
     </div>
   </section>
 
 
   <!-- PHOTO SECTION -->
   <section class="photo-container">
-    <h1 class="text-center">店舗情報</h1>
+    <h1 class="text-center" id="information">店舗情報</h1>
     <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -138,7 +153,7 @@
 
     <div class="carousel-text-container">
       <div class="carousel-text">
-        <span class="detail-text">内観:カウンター8席 / 掘り炬燵のお座敷7席（4席、3席） </span>
+        <span class="detail-text" id="photo_detail">内観:カウンター8席 / 掘り炬燵のお座敷7席（4席、3席） </span>
       </div>
     </div>
   </section>
@@ -150,7 +165,7 @@
       <iframe class="iframe" src="https://www.youtube.com/embed/3tSK83RxAzE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </div>
     <div class="video-text">
-      <span class="detail-text">Youtubeでも紹介されました！</span>
+      <span class="detail-text" id="movie">Youtubeでも紹介されました！</span>
     </div>
   </section>
 
@@ -163,28 +178,28 @@
 
     <div class="footer-three">
         <div class="info-details">
-          <span>■店名: </span>
-          <span>食楽びっきぃ</span>
+          <span id="footer_name1">■店名: </span>
+          <span id="footer_name2">食楽びっきぃ</span>
         </div>
         <br>
         <div class="info-details">
-          <span>■住所: </span>
-          <span>東京都北区赤羽1-42-15</span>
+          <span id="footer_address1">■住所: </span>
+          <span id="footer_address2">東京都北区赤羽1-42-15</span>
         </div>
         <br>
         <div class="info-details">
-          <span>■電話番号: </span>
-          <span>03-3901-9761</span>
+          <span id="footer_phone1">■電話番号: </span>
+          <span id="footer_phone2">03-3901-9761</span>
         </div>
         <br>
         <div class="info-details">
-          <span>■営業時間: </span>
-          <span>[月-日] 17時-0時</span>
+          <span id="footer_time1">■営業時間: </span>
+          <span id="footer_time2">[月-日] 17時-0時</span>
         </div>
         <br>
         <div class="info-details">
-          <span>■カード利用: </span>
-          <span>可（VISA,Master,AMEX,JCB,Diners）</span>
+          <span id="footer_card1">■カード利用: </span>
+          <span id="footer_card2">可（VISA,Master,AMEX,JCB,Diners）</span>
         </div>
     </div>
   </section>

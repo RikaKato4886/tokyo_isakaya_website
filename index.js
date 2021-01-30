@@ -1,7 +1,8 @@
-import Polyglot from 'node-polyglot';
+import TranslationApp from "./translation.js";
 
 ///////////////////  LP Animation  //////////////////
 ScrollReveal({ reset: true }).reveal('.top-text',{delay: 200});
+ScrollReveal({ reset: true }).reveal('.corona-detail',{delay: 400});
 ScrollReveal({ reset: true }).reveal('.top-message-box',{delay: 200});
 ScrollReveal({ reset: true }).reveal('.foodmenu-title', {delay: 200});
 ScrollReveal({ reset: true }).reveal('.wrap', {delay: 200});
@@ -57,50 +58,6 @@ closeBtns.forEach((closeBtn) => {
 });
 
 /////////////  Multilingual Setting  //////////
-
-class TranslationApp {
-  constructor() {
-    this.polyglot = new Polyglot();
-    this.currentLocale = localStorage.getItem("locale" || "ja");
-    this.updateLocale = this.updateLocale.bind(this);
-  }
-
-  setup() {
-    //現在のLocaleに合わせて、polyglotにメッセージをセットします。メッセージのセットにはpolyglot.extend()を利用します。
-    if (this.currentLocale === "ja"){
-      this.polyglot.extend({
-        "otsukare":"今日もお疲れ様でした",
-        "otsukare_p":"裏赤羽で今日は一杯、いかがですか？",
-        "corona1":"新型コロナ[COVID-19]への対策について",
-      });
-    } else {
-      this.polyglot.extend({
-        "otsukare":"Hi, Welcome to Bikki",
-        "otsukare_p":"we are a small Isakaya at Akabane in Tokyo",
-        "corona1":"Measures against COVID-19",
-      });
-    }
-  }
-
-  updateLocale(e) {
-    //ボタンにセットされたdata-localeを元に現在のlocaleを変更します。
-    const clickedlocale = e.target.dataset.locale;
-    localStorage.setItem("locale", clickedlocale);
-    this.currentLocale = clickedlocale;
-    console.log(this.currentLocale)
-    this.showMessage();
-  }
-
-  showMessage() {
-    this.setup()
-    const text1 = document.getElementById('otsukare');
-    text1.textContent = this.polyglot.t('otsukare');
-    const text2 = document.getElementById('otsukare_p');
-    text2.textContent = this.polyglot.t('otsukare_p');
-    const text3 = document.getElementById('corona1');
-    text3.textContent = this.polyglot.t('corona1');
-  }
-};
 
 {
   const app = new TranslationApp();

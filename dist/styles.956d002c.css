@@ -84,21 +84,28 @@
   height: auto; }
   .corona-info-container .corona-title {
     margin: 0 auto;
-    margin-bottom: 20px; }
-    .corona-info-container .corona-title h4 {
+    margin-bottom: 30px; }
+    .corona-info-container .corona-title h2 {
       color: #7a2813f3;
       text-align: center;
-      font-size: 1.2rem;
-      padding: 6px 5px; }
+      padding: 6px 5px;
+      margin-bottom: 2rem; }
   .corona-info-container .corona-detail {
     text-align: center;
     padding: 20px 20px;
     line-height: 40px;
     margin: 0 auto; }
-    .corona-info-container .corona-detail p {
-      letter-spacing: 2px; }
-      .corona-info-container .corona-detail p i {
-        color: #7a2813f3; }
+    .corona-info-container .corona-detail div {
+      margin-bottom: 50px; }
+      .corona-info-container .corona-detail div p {
+        letter-spacing: 2px; }
+        .corona-info-container .corona-detail div p i {
+          color: #7a2813f3; }
+
+.fas_corona {
+  color: #7a2813f3;
+  font-size: 4rem;
+  margin-bottom: 2rem; }
 
 .top-message-image {
   padding: 40px 50px; }
@@ -112,7 +119,7 @@
     margin-bottom: 3.2rem; }
   .top-message-box p {
     line-height: 50px;
-    padding: 50px 0; }
+    padding: 10px 0; }
 
 @media only screen and (max-width: 600px) {
   .top-text-box {
@@ -130,11 +137,11 @@
     .top-message-box h2 {
       font-size: 2rem;
       line-height: 50px;
-      margin-bottom: 5px; }
+      margin-bottom: 20px; }
     .top-message-box p {
       line-height: 50px;
       max-width: 770px;
-      padding: 50px 0; }
+      padding: 20px 0; }
 
   .corona-info-container {
     padding: 70px 20px; } }

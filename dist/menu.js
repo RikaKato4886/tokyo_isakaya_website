@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/styles.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../src/fake-top.jpg":[["fake-top.20ce40e5.jpg","src/fake-top.jpg"],"src/fake-top.jpg"],"./../src/inside1.jpg":[["inside1.099b7c50.jpg","src/inside1.jpg"],"src/inside1.jpg"],"./../src/jppaper-1.jpg":[["jppaper-1.6023fdfd.jpg","src/jppaper-1.jpg"],"src/jppaper-1.jpg"],"./../src/jppaper-3.jpg":[["jppaper-3.5231a5d2.jpg","src/jppaper-3.jpg"],"src/jppaper-3.jpg"],"./../src/jppaper-4.jpg":[["jppaper-4.56e373a0.jpg","src/jppaper-4.jpg"],"src/jppaper-4.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -393,122 +388,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-loader.js":[function(require,module,exports) {
-var getBundleURL = require('./bundle-url').getBundleURL;
-
-function loadBundlesLazy(bundles) {
-  if (!Array.isArray(bundles)) {
-    bundles = [bundles];
-  }
-
-  var id = bundles[bundles.length - 1];
-
-  try {
-    return Promise.resolve(require(id));
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      return new LazyPromise(function (resolve, reject) {
-        loadBundles(bundles.slice(0, -1)).then(function () {
-          return require(id);
-        }).then(resolve, reject);
-      });
-    }
-
-    throw err;
-  }
-}
-
-function loadBundles(bundles) {
-  return Promise.all(bundles.map(loadBundle));
-}
-
-var bundleLoaders = {};
-
-function registerBundleLoader(type, loader) {
-  bundleLoaders[type] = loader;
-}
-
-module.exports = exports = loadBundlesLazy;
-exports.load = loadBundles;
-exports.register = registerBundleLoader;
-var bundles = {};
-
-function loadBundle(bundle) {
-  var id;
-
-  if (Array.isArray(bundle)) {
-    id = bundle[1];
-    bundle = bundle[0];
-  }
-
-  if (bundles[bundle]) {
-    return bundles[bundle];
-  }
-
-  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
-  var bundleLoader = bundleLoaders[type];
-
-  if (bundleLoader) {
-    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
-      if (resolved) {
-        module.bundle.register(id, resolved);
-      }
-
-      return resolved;
-    }).catch(function (e) {
-      delete bundles[bundle];
-      throw e;
-    });
-  }
-}
-
-function LazyPromise(executor) {
-  this.executor = executor;
-  this.promise = null;
-}
-
-LazyPromise.prototype.then = function (onSuccess, onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.then(onSuccess, onError);
-};
-
-LazyPromise.prototype.catch = function (onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.catch(onError);
-};
-},{"./bundle-url":"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],0:[function(require,module,exports) {
-var b=require("../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-loader.js");
-},{}]},{},["../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
-//# sourceMappingURL=/styles.956d002c.js.map
+},{}]},{},["../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/menu.js.map
