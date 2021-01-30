@@ -80,12 +80,13 @@
   height: auto;
   .corona-title{
     margin: 0 auto;
-    margin-bottom: 20px;
-    h4{
+    margin-bottom: 30px;
+    h2{
       color: $main-red;
       text-align: center;
-      font-size: 1.2rem;
+      // font-size: 1.2rem;
       padding: 6px 5px;
+      margin-bottom: 2rem;
     }
   }
   .corona-detail{
@@ -93,13 +94,23 @@
     padding: 20px 20px;
     line-height: 40px;
     margin: 0 auto;
-    p{
-      letter-spacing: 2px;
-      i{
-        color: $main-red;
+    div{
+      margin-bottom: 50px;
+      p{
+        letter-spacing: 2px;
+        // font-size: 1.5rem;
+        i{
+          color: $main-red;
+        }
       }
     }
   }
+}
+
+.fas_corona {
+  color: $main-red;
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
 .top-message-image{
@@ -117,7 +128,7 @@
   p{
     line-height: 50px;
     // max-width: 770px;
-    padding: 50px 0;
+    padding: 10px 0;
   }
 }
 
@@ -141,13 +152,16 @@
     h2{
       font-size: 2rem;
       line-height: 50px;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
     }
     p{
       line-height: 50px;
       max-width: 770px;
-      padding: 50px 0;
+      padding: 20px 0;
     }
+  }
+  .corona-info-container {
+    padding: 70px 20px;
   }
 }
 
