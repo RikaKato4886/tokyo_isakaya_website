@@ -40,6 +40,7 @@ class TranslationApp {
         "footer_time2":"[月-日] 17時-0時",
         "footer_card1":"■カード利用: ",
         "footer_card2":"可（VISA,Master,AMEX,JCB,Diners）",
+        "menu_top_link":"メニュー",
       });
     } else {
       this.polyglot.extend({
@@ -73,6 +74,7 @@ class TranslationApp {
         "footer_time2":"[Mon-Sun] 5PM-0AM",
         "footer_card1":"■Credit Card: ",
         "footer_card2":"OK（VISA,Master,AMEX,JCB,Diners）",
+        "menu_top_link":"menu",
       });
     }
   }
@@ -148,6 +150,8 @@ class TranslationApp {
     text28.textContent = this.polyglot.t('footer_card1');
     const text29 = document.getElementById('footer_card2');
     text29.textContent = this.polyglot.t('footer_card2');
+    const text30 = document.getElementById('footer_card2');
+    text30.textContent = this.polyglot.t('menu_top_link');
   }
 };
 

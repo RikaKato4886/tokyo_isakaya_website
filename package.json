@@ -3,8 +3,8 @@
     "parcel-bundler": "^1.12.4"
   },
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel index.html menu.hml",
+    "build": "parcel build index.html menu.html"
   },
   "dependencies": {
     "node-polyglot": "^2.4.0"

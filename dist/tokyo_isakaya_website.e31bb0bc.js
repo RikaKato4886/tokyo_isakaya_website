@@ -2012,7 +2012,8 @@ var TranslationApp = /*#__PURE__*/function () {
           "footer_time1": "■営業時間:",
           "footer_time2": "[月-日] 17時-0時",
           "footer_card1": "■カード利用: ",
-          "footer_card2": "可（VISA,Master,AMEX,JCB,Diners）"
+          "footer_card2": "可（VISA,Master,AMEX,JCB,Diners）",
+          "menu_top_link": "メニュー"
         });
       } else {
         this.polyglot.extend({
@@ -2045,7 +2046,8 @@ var TranslationApp = /*#__PURE__*/function () {
           "footer_time1": "■Open hour:",
           "footer_time2": "[Mon-Sun] 5PM-0AM",
           "footer_card1": "■Credit Card: ",
-          "footer_card2": "OK（VISA,Master,AMEX,JCB,Diners）"
+          "footer_card2": "OK（VISA,Master,AMEX,JCB,Diners）",
+          "menu_top_link": "menu"
         });
       }
     }
@@ -2123,6 +2125,8 @@ var TranslationApp = /*#__PURE__*/function () {
       text28.textContent = this.polyglot.t('footer_card1');
       var text29 = document.getElementById('footer_card2');
       text29.textContent = this.polyglot.t('footer_card2');
+      var text30 = document.getElementById('footer_card2');
+      text30.textContent = this.polyglot.t('menu_top_link');
     }
   }]);
 
@@ -2221,7 +2225,7 @@ closeBtns.forEach(function (closeBtn) {
   var button2 = document.getElementById('button2');
   button2.addEventListener("click", app.updateLocale);
 }
-},{"./translation.js":"translation.js"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./translation.js":"translation.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2249,7 +2253,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65026" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52917" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -2425,5 +2429,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/tokyo_isakaya_website.e31bb0bc.js.map
