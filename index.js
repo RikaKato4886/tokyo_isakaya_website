@@ -1,4 +1,5 @@
 import TranslationApp from "./translation.js";
+import TranslationApp2 from "./menuTranslation.js";
 
 ///////////////////  LP Animation  //////////////////
 ScrollReveal({ reset: true }).reveal('.top-text',{delay: 200});
@@ -67,6 +68,16 @@ closeBtns.forEach((closeBtn) => {
 
   const button2 = document.getElementById('button2');
   button2.addEventListener("click", app.updateLocale);
+}
+
+{
+  const app1 = new TranslationApp2();
+  app1.showMessage();
+  const button3 = document.getElementById('button3');
+  button3.addEventListener("click", app1.updateLocale);
+
+  const button4 = document.getElementById('button4');
+  button4.addEventListener("click", app1.updateLocale);
 }
 
 

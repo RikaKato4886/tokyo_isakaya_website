@@ -2136,10 +2136,77 @@ var TranslationApp = /*#__PURE__*/function () {
 ;
 var _default = TranslationApp;
 exports.default = _default;
+},{"node-polyglot":"node_modules/node-polyglot/index.js"}],"menuTranslation.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _nodePolyglot = _interopRequireDefault(require("node-polyglot"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var TranslationApp2 = /*#__PURE__*/function () {
+  function TranslationApp2() {
+    _classCallCheck(this, TranslationApp2);
+
+    this.polyglot = new _nodePolyglot.default();
+    this.currentLocale = localStorage.getItem("locale" || "ja");
+    this.updateLocale = this.updateLocale.bind(this);
+  }
+
+  _createClass(TranslationApp2, [{
+    key: "setup",
+    value: function setup() {
+      if (this.currentLocale === "ja") {
+        this.polyglot.extend({
+          "menu_top_link": "メニュー"
+        });
+      } else {
+        this.polyglot.extend({
+          "menu_top_link": "menu"
+        });
+      }
+    }
+  }, {
+    key: "updateLocale",
+    value: function updateLocale(e) {
+      //ボタンにセットされたdata-localeを元に現在のlocaleを変更します。
+      var clickedlocale = e.target.dataset.locale;
+      localStorage.setItem("locale", clickedlocale);
+      this.currentLocale = clickedlocale;
+      console.log(this.currentLocale);
+      this.showMessage();
+    }
+  }, {
+    key: "showMessage",
+    value: function showMessage() {
+      this.setup();
+      var text30 = document.getElementById('menu_top_link');
+      text30.textContent = this.polyglot.t('menu_top_link');
+    }
+  }]);
+
+  return TranslationApp2;
+}();
+
+;
+var _default = TranslationApp2;
+exports.default = _default;
 },{"node-polyglot":"node_modules/node-polyglot/index.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _translation = _interopRequireDefault(require("./translation.js"));
+
+var _menuTranslation = _interopRequireDefault(require("./menuTranslation.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2225,7 +2292,15 @@ closeBtns.forEach(function (closeBtn) {
   var button2 = document.getElementById('button2');
   button2.addEventListener("click", app.updateLocale);
 }
-},{"./translation.js":"translation.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+{
+  var app1 = new _menuTranslation.default();
+  app1.showMessage();
+  var button3 = document.getElementById('button3');
+  button3.addEventListener("click", app1.updateLocale);
+  var button4 = document.getElementById('button4');
+  button4.addEventListener("click", app1.updateLocale);
+}
+},{"./translation.js":"translation.js","./menuTranslation.js":"menuTranslation.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2253,7 +2328,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52917" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58028" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

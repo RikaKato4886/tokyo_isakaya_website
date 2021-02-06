@@ -122,7 +122,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../src/fake-top.jpg":[["fake-top.20ce40e5.jpg","src/fake-top.jpg"],"src/fake-top.jpg"],"./../src/inside1.jpg":[["inside1.099b7c50.jpg","src/inside1.jpg"],"src/inside1.jpg"],"./../src/jppaper-1.jpg":[["jppaper-1.6023fdfd.jpg","src/jppaper-1.jpg"],"src/jppaper-1.jpg"],"./../src/jppaper-3.jpg":[["jppaper-3.5231a5d2.jpg","src/jppaper-3.jpg"],"src/jppaper-3.jpg"],"./../src/jppaper-4.jpg":[["jppaper-4.56e373a0.jpg","src/jppaper-4.jpg"],"src/jppaper-4.jpg"],"_css_loader":"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../src/fake-top.jpg":[["fake-top.20ce40e5.jpg","src/fake-top.jpg"],"src/fake-top.jpg"],"./../src/inside1.jpg":[["inside1.099b7c50.jpg","src/inside1.jpg"],"src/inside1.jpg"],"./../src/jppaper-1.jpg":[["jppaper-1.6023fdfd.jpg","src/jppaper-1.jpg"],"src/jppaper-1.jpg"],"./../src/jppaper-3.jpg":[["jppaper-3.5231a5d2.jpg","src/jppaper-3.jpg"],"src/jppaper-3.jpg"],"./../src/jppaper-4.jpg":[["jppaper-4.56e373a0.jpg","src/jppaper-4.jpg"],"src/jppaper-4.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -150,7 +150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52917" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58028" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
