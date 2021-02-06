@@ -89,7 +89,8 @@
       color: #7a2813f3;
       text-align: center;
       padding: 6px 5px;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      letter-spacing: 3px; }
   .corona-info-container .corona-detail {
     text-align: center;
     padding: 20px 20px;
@@ -98,7 +99,8 @@
     .corona-info-container .corona-detail div {
       margin-bottom: 50px; }
       .corona-info-container .corona-detail div p {
-        letter-spacing: 2px; }
+        letter-spacing: 4px;
+        font-size: 1.2rem; }
         .corona-info-container .corona-detail div p i {
           color: #7a2813f3; }
 
@@ -113,13 +115,16 @@
 .top-message-box {
   z-index: 100;
   color: white;
-  padding: 40px 10px; }
+  padding: 100px 40px; }
   .top-message-box h2 {
     font-size: 3rem;
-    margin-bottom: 3.2rem; }
+    margin-bottom: 4rem; }
   .top-message-box p {
     line-height: 50px;
-    padding: 10px 0; }
+    padding: 10px 0;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    margin-bottom: 3rem; }
 
 @media only screen and (max-width: 600px) {
   .top-text-box {
@@ -201,7 +206,10 @@
   padding-top: 30px; }
   .menu-detail h4 {
     font-weight: 600;
-    color: #7a2813f3; }
+    color: #7a2813f3;
+    font-size: 2.5rem; }
+  .menu-detail p {
+    font-size: 1rem; }
 
 .menu-detail-right {
   text-align: right; }

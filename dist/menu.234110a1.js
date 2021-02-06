@@ -1951,7 +1951,7 @@ Polyglot.transformPhrase = function transform(phrase, substitutions, locale) {
 
 module.exports = Polyglot;
 
-},{"for-each":"node_modules/for-each/index.js","warning":"node_modules/warning/warning.js","has":"node_modules/has/src/index.js","string.prototype.trim":"node_modules/string.prototype.trim/index.js"}],"translation.js":[function(require,module,exports) {
+},{"for-each":"node_modules/for-each/index.js","warning":"node_modules/warning/warning.js","has":"node_modules/has/src/index.js","string.prototype.trim":"node_modules/string.prototype.trim/index.js"}],"menuTranslation.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1969,41 +1969,96 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var TranslationApp = /*#__PURE__*/function () {
-  function TranslationApp() {
-    _classCallCheck(this, TranslationApp);
+var TranslationApp2 = /*#__PURE__*/function () {
+  function TranslationApp2() {
+    _classCallCheck(this, TranslationApp2);
 
     this.polyglot = new _nodePolyglot.default();
     this.currentLocale = localStorage.getItem("locale" || "ja");
     this.updateLocale = this.updateLocale.bind(this);
   }
 
-  _createClass(TranslationApp, [{
+  _createClass(TranslationApp2, [{
     key: "setup",
     value: function setup() {
       if (this.currentLocale === "ja") {
         this.polyglot.extend({
-          "otsukare": "今日もお疲れ様でした",
-          "otsukare_p": "\u88CF\u8D64\u7FBD\u3067\u4ECA\u65E5\u306F\u4E00\u676F\u3001\u3044\u304B\u304C\u3067\u3059\u304B\uFF1F",
-          "corona1": "新型コロナ[COVID-19]への対策について",
-          "corona_mask": "\u30DE\u30B9\u30AF\u30FB\u30D5\u30A7\u30A4\u30B9\u30AC\u30FC\u30C9\u7740\u7528\u306E\u5FB9\u5E95",
-          "corona_space": "客席間隔1メートルの確保",
-          "corona_air": "店内における定期的な換気",
-          "corona_clean": "定期的な店内設備の除菌徹底",
-          "youkoso_h2": "裏赤羽の隠れ家へようこそ",
-          "youkoso_one": "赤羽にどんなイメージをお持ちでしょうか？",
-          "youkoso_two": "赤羽のお店は一人では入りにくい・・そんな経験のある方も多いと思います。",
-          "youkoso_three": "当店は赤羽の喧騒から少し離れた場所にある、赤羽らしくも落ち着いたお店です。",
-          "youkoso_four": "どこか懐かしく、ここでしか味わえない料理をおもてなし致します。",
-          "osusume": "びっきぃのおすすめ",
-          "recommend1": "びっきぃ名物 赤手羽揚げ",
-          "recommend1_detail": "みりん、砂糖を一切使わず、醤油と厳選した調味料で5時間漬け込んだ絶品手羽揚げです。",
-          "recommend2": "自家製ピクルス",
-          "recommend2_detail": "お代わり続出！さわやかな自家製のピクルスです。",
-          "menu_link": "その他のメニューはこちらから",
-          "information": "店舗情報",
-          "photo_detail": "内観:カウンター8席 / 掘り炬燵のお座敷7席（4席、3席）",
-          "movie": "Youtubeでも紹介されました！",
+          "menu_top_link": "メニュー",
+          "ippin": "一品料理",
+          "otegaru": "お手軽料理",
+          "salad": "サラダ",
+          "drink": "お飲み物",
+          "daily_osusume": "上記以外にも、その日のおすすめ料理がございます。ご来店の際には、お気軽にスタッフまでお声かけ下さい。",
+          "atsuage": "厚揚げ焼き",
+          "atsuageni": "厚揚げ煮",
+          "tofusteak": "豆腐ステーキきのこあんかけ",
+          "toritama": "鳥玉きのこあんかけ",
+          "torinegi": "鳥と葱の炒め物(タレor塩)",
+          "butakim": "豚キムチ炒め",
+          "champuru": "漬物チャンプル",
+          "butashabu": "豚しゃぶ香味ソース",
+          "chips": "ポテトフライ",
+          "yakitorigratin": "焼き鳥グラタン",
+          "kimchigratin": "キムチグラタン",
+          "torikawa": "鶏皮ポン酢",
+          "Deepcheese": "チーズの唐揚げ",
+          "octopus": "タコぶつ",
+          "tofu": "冷奴",
+          "tanuki": "たぬきやっこ",
+          "slicetomato": "冷やしトマト",
+          "edamame": "枝豆",
+          "katsuochip": "特製かつお節チップ",
+          "shiokobu": "塩こぶキャベツ",
+          "tsukemono": "漬物",
+          "kimchi": "キムチ",
+          "cheesechip": "チーズチップ",
+          "hmpickle": "自家製ピクルス",
+          "tofucream": "クリームチーズやっこ",
+          "shiokara": "函館直送いか塩辛",
+          "sobasalad": "そばサラダ",
+          "ramensalad": "ラーメンサラダ",
+          "potatosalad": "ポテトサラダ",
+          "torikawasalad": "鳥皮サラダ",
+          "eggsalad": "たまごサラダ",
+          "ebisubeer": "エビス生ビール中",
+          "sapporokuro": "サッポロ黒ラベル中瓶",
+          "hoppikuro": "ホッピー黒",
+          "hoppishiro": "ホッピー白",
+          "hoppinaka": "ホッピー中身",
+          "hoppinakadouble": "ホッピー中身ダブル",
+          "highball": "角ハイボール",
+          "harperhigh": "ハーパーハイボール",
+          "redhigh": "赤ハイボール",
+          "umesh": "梅酒",
+          "sumiwata": "澄み渡る梅酒",
+          "shiroume": "白加賀梅酒",
+          "akaume": "赤梅酒",
+          "kokutoume": "黒糖梅酒",
+          "umegyoku": "梅酒玉露割り",
+          "santory": "サントリー角瓶",
+          "hakushu": "サントリー白州",
+          "johnnie": "ジョニーウォーカー(赤)",
+          "IWharper": "I.W ハーパー",
+          "shochuhigh": "焼酎ハイボール",
+          "bikkihigh": "びっきぃハイボール",
+          "freshlemonhigh": "生レモンハイボール",
+          "grapefruithigh": "生グレープフルーツハイボール",
+          "lemonhigh": "レモンハイボール",
+          "shochu": "焼酎",
+          "takara": "宝焼酎 純 (甲類)",
+          "shirashin": "知心剣 (麦)",
+          "waramugi": "和ら麦 (麦)",
+          "ikkomon": "一刻者 (芋)",
+          "karari": "からり芋 (芋)",
+          "kokutoshu": "黒糖酒 (黒糖)",
+          "mizuho": "瑞穂 (泡盛)",
+          "kikutsuyu": "菊の露40度",
+          "citrushigh": "シークワーサーハイボール",
+          "winehigh": "ワインハイボール(赤 or 白)",
+          "calpishigh": "カルピスハイボール",
+          "turmerichigh": "ウコンウーロンハイ",
+          "gyokurohigh": "玉露ハイ",
+          "jasminehigh": "ジャスミンハイ",
           "footer_name1": "■店名: ",
           "footer_name2": "食楽びっきぃ",
           "footer_address1": "■住所:",
@@ -2016,27 +2071,82 @@ var TranslationApp = /*#__PURE__*/function () {
         });
       } else {
         this.polyglot.extend({
-          "otsukare": "Hi, Welcome to Bikki",
-          "otsukare_p": "we are a small Isakaya at Akabane in Tokyo",
-          "corona1": "Measures against COVID-19",
-          "corona_mask": " Wear Mask or Face-guard",
-          "corona_space": "Create Social Distance",
-          "corona_air": "Exchange Air Frequently",
-          "corona_clean": "Clean Equipments Frequently",
-          "youkoso_h2": "What is Bikki..?",
-          "youkoso_one": "What is your image of Akabane?",
-          "youkoso_two": "You might think that it is awkward to enter Izakaya in Akabane.",
-          "youkoso_three": "We are located a little bit away from Akabane main road",
-          "youkoso_four": "We are going to welcome you with warm service and Japanese style food!",
-          "osusume": "Bikki's Recommendation",
-          "recommend1": "Red Chicken Wings",
-          "recommend1_detail": "Marinated with Special Soysource for more than 5 hours without Mirin and Sugar.",
-          "recommend2": "Handmade Pickles",
-          "recommend2_detail": "Handmade Pickles! one of our popular menus. you can enjoy fresh taste of local vegitable",
-          "menu_link": "Other menu",
-          "information": "Information",
-          "photo_detail": " 8 Counter Seats / 7 Japanese Style Tatami Seats(No chair)",
-          "movie": "We are introduced by Japanese Youtbe Channel",
+          "menu_top_link": "menu",
+          "ippin": "Ala Carte",
+          "otegaru": "Appetizer",
+          "salad": "Salad",
+          "drink": "Drink",
+          "daily_osusume": "We have more recommendations other than this menu. Please feel free to ask us when you come here!",
+          "atsuage": "Stir Fried Atsuage(deep fried Tofu)",
+          "atsuageni": "Atsuage(deep fried Tofu) stew",
+          "tofusteak": "Tofu Steak with mushroom source",
+          "toritama": "Chicken-Egg with mushroom source",
+          "torinegi": "Stir fried chicken and leek(TARE source or Salt)",
+          "butakim": "Stir fried pork Kimchi",
+          "champuru": "Okinawan stir-fry dish with pickle",
+          "butashabu": "Boiled Pork(shabu) with source",
+          "chips": "French Fries",
+          "yakitorigratin": "Yakitori Gratin",
+          "kimchigratin": "Kimchi Gratin",
+          "torikawa": "Torikawa Ponzu(Chicken Skin with Ponzu Sauce)",
+          "Deepcheese": "Deep fried cheese",
+          "octopus": "Octopus",
+          "tofu": "Tofu",
+          "tanuki": "Tofu with tempura bits",
+          "slicetomato": "Sliced Tomato",
+          "edamame": "Edamame",
+          "katsuochip": "Dried Bonito Chips",
+          "shiokobu": "Cabbage with salted konbu(sea weed)",
+          "tsukemono": "Pickle",
+          "kimchi": "Kimchi",
+          "cheesechip": "Cheesechip",
+          "hmpickle": "Home-made Pickle",
+          "tofucream": "Tofu with CreamCheese",
+          "shiokara": "Shiokara(from Hokkaido)",
+          "sobasalad": "Soba-salad",
+          "ramensalad": "Ramen-salad",
+          "potatosalad": "Potato-salad",
+          "torikawasalad": "Chicken-skin-salad",
+          "eggsalad": "Egg-salad",
+          "ebisubeer": "Ebisu draft beer",
+          "sapporokuro": "Sapporo black label",
+          "hoppikuro": "Hoppi Kuro",
+          "hoppishiro": "Hoppi Shiro",
+          "hoppinaka": "Hoppi naka(only shochu)",
+          "hoppinakadouble": "Hoppi naka double (double shochu)",
+          "highball": "HighBall(whisky&Soda)",
+          "harperhigh": "Harper High Ball",
+          "redhigh": "Red high ball",
+          "umesh": "Umeshu(plum wine)",
+          "sumiwata": "Sumiwataru Umeshu",
+          "shiroume": "Shirokaga Umeshu",
+          "akaume": "Red Umeshu",
+          "kokutoume": "Blown sugar Umeshu",
+          "umegyoku": "Umeshu x green tea",
+          "santory": "Santory Whisky",
+          "hakushu": "Santory Hakushu",
+          "johnnie": "Johnnie Walker RED LABEL",
+          "IWharper": "I.W HARPER",
+          "shochuhigh": "Shochu x Highball",
+          "bikkihigh": "Bikki Highball",
+          "freshlemonhigh": "Fresh Lemon Highball",
+          "grapefruithigh": "Fresh grapefruit Highball",
+          "lemonhigh": "Lemon Highball",
+          "shochu": "Shochu",
+          "takara": "Takara shochu Jun",
+          "shirashin": "Shirashinken (Mugi)",
+          "waramugi": "Waramugi (Mugi)",
+          "ikkomon": "Ikkomon (Imo)",
+          "karari": "Karari Imo (Imo)",
+          "kokutoshu": "Blown Sugar Sake",
+          "mizuho": "Mizuho (Awamori)",
+          "kikutsuyu": "Kiku no Tsuyu (Awamori)",
+          "citrushigh": "Citrus Highball",
+          "winehigh": "Wine Highball (red or white)",
+          "calpishigh": "Calpis Highball",
+          "turmerichigh": "Turmerich BlackTea Highball",
+          "gyokurohigh": "GreenTea Highball",
+          "jasminehigh": "Jasmine Highball",
           "footer_name1": "■Name: ",
           "footer_name2": "Bikki (Shokuraku Bikki)",
           "footer_address1": "■Address:",
@@ -2063,119 +2173,250 @@ var TranslationApp = /*#__PURE__*/function () {
     key: "showMessage",
     value: function showMessage() {
       this.setup();
-      var text1 = document.getElementById('otsukare');
-      text1.textContent = this.polyglot.t('otsukare');
-      var text2 = document.getElementById('otsukare_p');
-      text2.textContent = this.polyglot.t('otsukare_p');
-      var text3 = document.getElementById('corona1');
-      text3.textContent = this.polyglot.t('corona1');
-      var text4 = document.getElementById('corona_mask');
-      text4.textContent = this.polyglot.t("corona_mask");
-      var text5 = document.getElementById('corona_space');
-      text5.textContent = this.polyglot.t("corona_space");
-      var text55 = document.getElementById('corona_air');
-      text55.textContent = this.polyglot.t("corona_air");
-      var text6 = document.getElementById('corona_clean');
-      text6.textContent = this.polyglot.t('corona_clean');
-      var text7 = document.getElementById('youkoso_h2');
-      text7.textContent = this.polyglot.t('youkoso_h2');
-      var text8 = document.getElementById('youkoso_one');
-      text8.textContent = this.polyglot.t('youkoso_one');
-      var text9 = document.getElementById('youkoso_two');
-      text9.textContent = this.polyglot.t('youkoso_two');
-      var text10 = document.getElementById('youkoso_three');
-      text10.textContent = this.polyglot.t('youkoso_three');
-      var text11 = document.getElementById('youkoso_four');
-      text11.textContent = this.polyglot.t('youkoso_four');
-      var text12 = document.getElementById('osusume');
-      text12.textContent = this.polyglot.t('osusume');
-      var text13 = document.getElementById('recommend1');
-      text13.textContent = this.polyglot.t('recommend1');
-      var text14 = document.getElementById('recommend1_detail');
-      text14.textContent = this.polyglot.t('recommend1_detail');
-      var text15 = document.getElementById('recommend2');
-      text15.textContent = this.polyglot.t('recommend2');
-      var text16 = document.getElementById('recommend2_detail');
-      text16.textContent = this.polyglot.t('recommend2_detail');
-      var text17 = document.getElementById('menu_link');
-      text17.textContent = this.polyglot.t('menu_link');
-      var text18 = document.getElementById('information');
-      text18.textContent = this.polyglot.t('information');
-      var text19 = document.getElementById('photo_detail');
-      text19.textContent = this.polyglot.t('photo_detail');
-      var text20 = document.getElementById('movie');
-      text20.textContent = this.polyglot.t('movie');
-      var text21 = document.getElementById('footer_name1');
-      text21.textContent = this.polyglot.t('footer_name1');
-      var text22 = document.getElementById('footer_name2');
-      text22.textContent = this.polyglot.t('footer_name2');
-      var text23 = document.getElementById('footer_address1');
-      text23.textContent = this.polyglot.t('footer_address1');
-      var text24 = document.getElementById('footer_address2');
-      text24.textContent = this.polyglot.t('footer_address2');
-      var text25 = document.getElementById('footer_phone1');
-      text25.textContent = this.polyglot.t('footer_phone1');
-      var text26 = document.getElementById('footer_time1');
-      text26.textContent = this.polyglot.t('footer_time1');
-      var text27 = document.getElementById('footer_time2');
-      text27.textContent = this.polyglot.t('footer_time2');
-      var text28 = document.getElementById('footer_card1');
-      text28.textContent = this.polyglot.t('footer_card1');
-      var text29 = document.getElementById('footer_card2');
-      text29.textContent = this.polyglot.t('footer_card2');
-      var text30 = document.getElementById('footer_card2');
+      var text1 = document.getElementById('menu_top_link');
+      text1.textContent = this.polyglot.t('menu_top_link');
+      var text2 = document.getElementById('ippin');
+      text2.textContent = this.polyglot.t('ippin');
+      var text3 = document.getElementById('otegaru');
+      text3.textContent = this.polyglot.t('otegaru');
+      var text4 = document.getElementById('salad');
+      text4.textContent = this.polyglot.t('salad');
+      var text5 = document.getElementById('drink');
+      text5.textContent = this.polyglot.t('drink');
+      var text6 = document.getElementById('daily_osusume');
+      text6.textContent = this.polyglot.t('daily_osusume');
+      var text7 = document.getElementById('atsuage');
+      text7.textContent = this.polyglot.t('atsuage');
+      var text8 = document.getElementById('atsuageni');
+      text8.textContent = this.polyglot.t('atsuageni');
+      var text9 = document.getElementById('tofusteak');
+      text9.textContent = this.polyglot.t('tofusteak');
+      var text10 = document.getElementById('toritama');
+      text10.textContent = this.polyglot.t('toritama');
+      var text11 = document.getElementById('torinegi');
+      text11.textContent = this.polyglot.t('torinegi');
+      var text12 = document.getElementById('butakim');
+      text12.textContent = this.polyglot.t('butakim');
+      var text13 = document.getElementById('champuru');
+      text13.textContent = this.polyglot.t('champuru');
+      var text14 = document.getElementById('butashabu');
+      text14.textContent = this.polyglot.t('butashabu');
+      var text15 = document.getElementById('chips');
+      text15.textContent = this.polyglot.t('chips');
+      var text16 = document.getElementById('yakitorigratin');
+      text16.textContent = this.polyglot.t('yakitorigratin');
+      var text17 = document.getElementById('kimchigratin');
+      text17.textContent = this.polyglot.t('kimchigratin');
+      var text18 = document.getElementById('torikawa');
+      text18.textContent = this.polyglot.t('torikawa');
+      var text19 = document.getElementById('Deepcheese');
+      text19.textContent = this.polyglot.t('Deepcheese');
+      var text20 = document.getElementById('octopus');
+      text20.textContent = this.polyglot.t('octopus');
+      var text21 = document.getElementById('atsuageni');
+      text21.textContent = this.polyglot.t('atsuageni');
+      var text22 = document.getElementById('tofu');
+      text22.textContent = this.polyglot.t('tofu');
+      var text23 = document.getElementById('tanuki');
+      text23.textContent = this.polyglot.t('tanuki');
+      var text24 = document.getElementById('slicetomato');
+      text24.textContent = this.polyglot.t('slicetomato');
+      var text25 = document.getElementById('edamame');
+      text25.textContent = this.polyglot.t('edamame');
+      var text26 = document.getElementById('katsuochip');
+      text26.textContent = this.polyglot.t('katsuochip');
+      var text27 = document.getElementById('shiokobu');
+      text27.textContent = this.polyglot.t('shiokobu');
+      var text28 = document.getElementById('tsukemono');
+      text28.textContent = this.polyglot.t('tsukemono');
+      var text29 = document.getElementById('kimchi');
+      text29.textContent = this.polyglot.t('kimchi');
+      var text30 = document.getElementById('cheesechip');
+      text30.textContent = this.polyglot.t('cheesechip');
+      var text31 = document.getElementById('hmpickle');
+      text31.textContent = this.polyglot.t('hmpickle');
+      var text32 = document.getElementById('tofucream');
+      text32.textContent = this.polyglot.t('tofucream');
+      var text33 = document.getElementById('shiokara');
+      text33.textContent = this.polyglot.t('shiokara');
+      var text34 = document.getElementById('sobasalad');
+      text34.textContent = this.polyglot.t('sobasalad');
+      var text35 = document.getElementById('ramensalad');
+      text35.textContent = this.polyglot.t('ramensalad');
+      var text36 = document.getElementById('potatosalad');
+      text36.textContent = this.polyglot.t('potatosalad');
+      var text37 = document.getElementById('torikawasalad');
+      text37.textContent = this.polyglot.t('torikawasalad');
+      var text38 = document.getElementById('eggsalad');
+      text38.textContent = this.polyglot.t('eggsalad');
+      var text39 = document.getElementById('ebisubeer');
+      text39.textContent = this.polyglot.t('ebisubeer');
+      var text40 = document.getElementById('sapporokuro');
+      text40.textContent = this.polyglot.t('sapporokuro');
+      var text41 = document.getElementById('hoppikuro');
+      text41.textContent = this.polyglot.t('hoppikuro');
+      var text42 = document.getElementById('hoppishiro');
+      text42.textContent = this.polyglot.t('hoppishiro');
+      var text43 = document.getElementById('hoppinaka');
+      text43.textContent = this.polyglot.t('hoppinaka');
+      var text44 = document.getElementById('hoppinakadouble');
+      text44.textContent = this.polyglot.t('hoppinakadouble');
+      var text45 = document.getElementById('highball');
+      text45.textContent = this.polyglot.t('highball');
+      var text46 = document.getElementById('harperhigh');
+      text46.textContent = this.polyglot.t('harperhigh');
+      var text47 = document.getElementById('redhigh');
+      text47.textContent = this.polyglot.t('redhigh');
+      var text48 = document.getElementById('umesh');
+      text48.textContent = this.polyglot.t('umesh');
+      var text49 = document.getElementById('sumiwata');
+      text49.textContent = this.polyglot.t('sumiwata');
+      var text50 = document.getElementById('shiroume');
+      text50.textContent = this.polyglot.t('shiroume');
+      var text51 = document.getElementById('akaume');
+      text51.textContent = this.polyglot.t('akaume');
+      var text52 = document.getElementById('kokutoume');
+      text52.textContent = this.polyglot.t('kokutoume');
+      var text53 = document.getElementById('umegyoku');
+      text53.textContent = this.polyglot.t('umegyoku');
+      var text54 = document.getElementById('santory');
+      text54.textContent = this.polyglot.t('santory');
+      var text55 = document.getElementById('hakushu');
+      text55.textContent = this.polyglot.t('hakushu');
+      var text56 = document.getElementById('johnnie');
+      text56.textContent = this.polyglot.t('johnnie');
+      var text57 = document.getElementById('IWharper');
+      text57.textContent = this.polyglot.t('IWharper');
+      var text58 = document.getElementById('shochuhigh');
+      text58.textContent = this.polyglot.t('shochuhigh');
+      var text59 = document.getElementById('bikkihigh');
+      text59.textContent = this.polyglot.t('bikkihigh');
+      var text60 = document.getElementById('freshlemonhigh');
+      text60.textContent = this.polyglot.t('freshlemonhigh');
+      var text61 = document.getElementById('grapefruithigh');
+      text61.textContent = this.polyglot.t('grapefruithigh');
+      var text62 = document.getElementById('lemonhigh');
+      text62.textContent = this.polyglot.t('lemonhigh');
+      var text63 = document.getElementById('shochu');
+      text63.textContent = this.polyglot.t('shochu');
+      var text64 = document.getElementById('takara');
+      text64.textContent = this.polyglot.t('takara');
+      var text65 = document.getElementById('shirashin');
+      text65.textContent = this.polyglot.t('shirashin');
+      var text66 = document.getElementById('waramugi');
+      text66.textContent = this.polyglot.t('waramugi');
+      var text67 = document.getElementById('ikkomon');
+      text67.textContent = this.polyglot.t('ikkomon');
+      var text68 = document.getElementById('karari');
+      text68.textContent = this.polyglot.t('karari');
+      var text69 = document.getElementById('kokutoshu');
+      text69.textContent = this.polyglot.t('kokutoshu');
+      var text70 = document.getElementById('mizuho');
+      text70.textContent = this.polyglot.t('mizuho');
+      var text71 = document.getElementById('kikutsuyu');
+      text71.textContent = this.polyglot.t('kikutsuyu');
+      var text72 = document.getElementById('citrushigh');
+      text72.textContent = this.polyglot.t('citrushigh');
+      var text73 = document.getElementById('winehigh');
+      text73.textContent = this.polyglot.t('winehigh');
+      var text74 = document.getElementById('calpishigh');
+      text74.textContent = this.polyglot.t('calpishigh');
+      var text75 = document.getElementById('turmerichigh');
+      text75.textContent = this.polyglot.t('turmerichigh');
+      var text76 = document.getElementById('gyokurohigh');
+      text76.textContent = this.polyglot.t('gyokurohigh');
+      var text77 = document.getElementById('jasminehigh');
+      text77.textContent = this.polyglot.t('jasminehigh');
+      var text78 = document.getElementById('footer_name1');
+      text78.textContent = this.polyglot.t('footer_name1');
+      var text79 = document.getElementById('footer_name2');
+      text79.textContent = this.polyglot.t('footer_name2');
+      var text80 = document.getElementById('footer_address1');
+      text80.textContent = this.polyglot.t('footer_address1');
+      var text81 = document.getElementById('footer_address2');
+      text81.textContent = this.polyglot.t('footer_address2');
+      var text82 = document.getElementById('footer_phone1');
+      text82.textContent = this.polyglot.t('footer_phone1');
+      var text83 = document.getElementById('footer_time1');
+      text83.textContent = this.polyglot.t('footer_time1');
+      var text84 = document.getElementById('footer_time2');
+      text84.textContent = this.polyglot.t('footer_time2');
+      var text85 = document.getElementById('footer_card1');
+      text85.textContent = this.polyglot.t('footer_card1');
+      var text86 = document.getElementById('footer_card2');
+      text86.textContent = this.polyglot.t('footer_card2');
     }
   }]);
 
-  return TranslationApp;
+  return TranslationApp2;
 }();
 
 ;
-var _default = TranslationApp;
+var _default = TranslationApp2;
 exports.default = _default;
-},{"node-polyglot":"node_modules/node-polyglot/index.js"}],"index.js":[function(require,module,exports) {
+},{"node-polyglot":"node_modules/node-polyglot/index.js"}],"menu.js":[function(require,module,exports) {
 "use strict";
 
-var _translation = _interopRequireDefault(require("./translation.js"));
+var _menuTranslation = _interopRequireDefault(require("./menuTranslation.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-///////////////////  LP Animation  //////////////////
-ScrollReveal({
-  reset: true
-}).reveal('.top-text', {
-  delay: 200
-});
-ScrollReveal({
-  reset: true
-}).reveal('.corona-detail', {
-  delay: 400
-});
-ScrollReveal({
-  reset: true
-}).reveal('.top-message-box', {
-  delay: 200
-});
-ScrollReveal({
-  reset: true
-}).reveal('.foodmenu-title', {
-  delay: 200
-});
-ScrollReveal({
-  reset: true
-}).reveal('.wrap', {
-  delay: 200
+// Get the modal
+var modals = document.querySelectorAll(".modal"); // Get the button that opens the modal
+
+var openModalBtns = document.querySelectorAll(".modal-open"); // Get btn-close
+
+var closeBtns = document.querySelectorAll(".btn-close"); //Get modal cover
+
+var modalCovers = document.querySelectorAll('.modal-cover'); //モーダルを閉じる処理
+
+var closeModal = function closeModal() {
+  modals.forEach(function (modal) {
+    modal.classList.add('is-close');
+    modal.classList.remove('is-open');
+    modal.classList.remove('is-close');
+  });
+}; // 外の範囲クリックでmodalを閉じる
+
+
+window.onclick = function (e) {
+  modalCovers.forEach(function (modalCover) {
+    if (e.target === modalCover) {
+      closeModal();
+    }
+  });
+}; // モーダル開くボタンクリックでmodalを開く
+
+
+openModalBtns.forEach(function (openModalBtn) {
+  openModalBtn.addEventListener('click', function () {
+    var clikedOpenBtn = openModalBtn.getAttribute('data-modal-open');
+    modals.forEach(function (modal) {
+      //もしも同じNumの場合
+      var modalDataNum = modal.getAttribute('data-modal');
+
+      if (modalDataNum === clikedOpenBtn) {
+        modal.classList.add('is-open');
+      }
+    });
+  });
+}); // グレーのcloseボタンクリックでmodalを閉じる
+
+closeBtns.forEach(function (closeBtn) {
+  closeBtn.addEventListener('click', function () {
+    closeModal();
+  });
 }); /////////////  Multilingual Setting  //////////
 
 {
-  var app = new _translation.default();
+  var app = new _menuTranslation.default();
   app.showMessage();
-  var button1 = document.getElementById('button1');
-  button1.addEventListener("click", app.updateLocale);
-  var button2 = document.getElementById('button2');
-  button2.addEventListener("click", app.updateLocale);
+  var button3 = document.getElementById('button3');
+  button3.addEventListener("click", app.updateLocale);
+  var button4 = document.getElementById('button4');
+  button4.addEventListener("click", app.updateLocale);
 }
-},{"./translation.js":"translation.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./menuTranslation.js":"menuTranslation.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2379,5 +2620,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/tokyo_isakaya_website.e31bb0bc.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","menu.js"], null)
+//# sourceMappingURL=/menu.234110a1.js.map

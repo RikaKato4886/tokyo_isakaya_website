@@ -69,7 +69,7 @@
             <div class="photo"><img src="src/maguro.jpg"></div>
             <div class="text">
               <span><i class="fas fa-chevron-circle-right"></i></span>
-              <span>一品料理</span>
+              <span id="ippin">一品料理</span>
             </div>
             </a>
         </li>
@@ -79,7 +79,7 @@
               <div class="photo"><img src="src/katsuobushi.jpg"></div>
               <div class="text">
                 <span><i class="fas fa-chevron-circle-right"></i></span>
-                <span>お手軽料理</span>
+                <span id="otegaru">お手軽料理</span>
               </div>
               </a>
         </li>
@@ -89,7 +89,7 @@
           <div class="photo"><img src="src/sarada1.jpg"></div>
           <div class="text">
             <span><i class="fas fa-chevron-circle-right"></i></span>
-            <span>サラダ</span>
+            <span id="salad">サラダ</span>
           </div>
           </a>
         </li>
@@ -98,7 +98,7 @@
           <div class="photo"><img src="src/hoppi.jpeg"></div>
           <div class="text">
             <span><i class="fas fa-chevron-circle-right"></i></span>
-            <span>お飲み物</span>
+            <span id="drink">お飲み物</span>
           </div>
           </a>
         </li>
@@ -107,7 +107,7 @@
 
     <div class="menu-additional-box">
       <div class="additional-box">
-        <p class="additional-text">上記以外にも、その日のおすすめ料理がございます。ご来店の際には、お気軽にスタッフまでお声かけ下さい。</p>
+        <p class="additional-text" id="daily_osusume">上記以外にも、その日のおすすめ料理がございます。ご来店の際には、お気軽にスタッフまでお声かけ下さい。</p>
       </div>
     </div>
   </section>
@@ -120,82 +120,66 @@
         <div class="menu-title"><img src="src/ippinryori.png"></div>
         <div class="menu-list">
           <dl>
-            <dt>厚揚げ焼き</dt>
+            <dt id="atsuage">厚揚げ焼き</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>厚揚げ煮</dt>
+            <dt id="atsuageni">厚揚げ煮</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>豆腐ステーキきのこあんかけ</dt>
+            <dt id="tofusteak">豆腐ステーキきのこあんかけ</dt>
             <dd>550円</dd>
           </dl>
           <dl>
-            <dt>鳥玉きのこあんかけ</dt>
+            <dt id="toritama">鳥玉きのこあんかけ</dt>
             <dd>550円</dd>
           </dl>
           <dl>
-            <dt>鳥と葱の炒め物(タレor塩)</dt>
+            <dt id="torinegi">鳥と葱の炒め物(タレor塩)</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>豚キムチ炒め</dt>
+            <dt id="butakim">豚キムチ炒め</dt>
             <dd>550円</dd>
           </dl>
           <dl>
-            <dt>漬物チャンプル</dt>
+            <dt id="champuru">漬物チャンプル</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>豚しゃぶ香味ソース</dt>
+            <dt id="butashabu">豚しゃぶ香味ソース</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>ポテトフライ</dt>
+            <dt id="chips">ポテトフライ</dt>
             <dd>480円</dd>
           </dl>
           <dl>
-            <dt>焼き鳥グラタン</dt>
+            <dt id="yakitorigratin">焼き鳥グラタン</dt>
             <dd>550円</dd>
           </dl>
         </div>
         <div class="menu-list">
           <dl>
-            <dt>キムチグラタン</dt>
+            <dt id="kimchigratin">キムチグラタン</dt>
             <dd>550円</dd>
           </dl>
           <dl>
-            <dt>キャベツツナポン酢</dt>
+            <dt id="Cabbagetuna">キャベツツナポン酢</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>鶏皮ポン酢</dt>
+            <dt id="torikawa">鶏皮ポン酢</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>チーズの唐揚げ</dt>
+            <dt id="Deepcheese">チーズの唐揚げ</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>タコぶつ</dt>
+            <dt id="octopus">タコぶつ</dt>
             <dd>500円</dd>
-          </dl>
-          <dl>
-            <dt>タコスパイシー炒め</dt>
-            <dd>???円</dd>
-          </dl>
-          <dl>
-            <dt>鮪ブツ漬け</dt>
-            <dd>???円</dd>
-          </dl>
-          <dl>
-            <dt>びっきぃ角煮</dt>
-            <dd>???円</dd>
-          </dl>
-          <dl>
-            <dt>豚吸い</dt>
-            <dd>???円</dd>
           </dl>
         </div>
         <div class="btn-wrap">
@@ -212,57 +196,57 @@
         <div class="menu-title"><img src="src/tegaru-logo.png"></div>
         <div class="menu-list">
           <dl>
-            <dt>冷奴</dt>
+            <dt id="tofu">冷奴</dt>
             <dd>350円</dd>
           </dl>
           <dl>
-            <dt>たぬきやっこ</dt>
+            <dt id="tanuki">たぬきやっこ</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>冷やしトマト</dt>
+            <dt id="slicetomato">冷やしトマト</dt>
             <dd>350円</dd>
           </dl>
           <dl>
-            <dt>枝豆</dt>
+            <dt id="edamame">枝豆</dt>
             <dd>350円</dd>
           </dl>
           <dl>
-            <dt>特製かつお節チップ</dt>
+            <dt id="katsuochip">特製かつお節チップ</dt>
             <dd>350円</dd>
           </dl>
           <dl>
-            <dt>塩こぶキュウリ</dt>
+            <dt id="">塩こぶキュウリ</dt>
             <dd>380円</dd>
           </dl>
           <dl>
-            <dt>塩こぶキャベツ</dt>
+            <dt id="shiokobu">塩こぶキャベツ</dt>
             <dd>380円</dd>
           </dl>
           <dl>
-            <dt>漬物</dt>
+            <dt id="tsukemono">漬物</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>キムチ</dt>
+            <dt id="kimchi">キムチ</dt>
             <dd>380円</dd>
           </dl>
           <dl>
-            <dt>チーズチップ</dt>
+            <dt id="cheesechip">チーズチップ</dt>
             <dd>380円</dd>
           </dl>
         </div>
         <div class="menu-list">
           <dl>
-            <dt>自家製ピクルス</dt>
+            <dt id="hmpickle">自家製ピクルス</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>クリームチーズやっこ</dt>
+            <dt id="tofucream">クリームチーズやっこ</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>函館直送いか塩辛</dt>
+            <dt id="shiokara">函館直送いか塩辛</dt>
             <dd>400円</dd>
           </dl>
         </div>
@@ -280,23 +264,23 @@
         <div class="menu-title"><img src="src/salad-logo.png"></div>
         <div class="menu-list">
           <dl>
-            <dt>そばサラダ</dt>
+            <dt id="sobasalad">そばサラダ</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>ラーメンサラダ</dt>
+            <dt id="ramensalad">ラーメンサラダ</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>ポテトサラダ</dt>
+            <dt id="potatosalad">ポテトサラダ</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>鳥皮サラダ</dt>
+            <dt id="torikawasalad">鳥皮サラダ</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>たまごサラダ</dt>
+            <dt id="eggsalad">たまごサラダ</dt>
             <dd>500円</dd>
           </dl>
         </div>
@@ -315,62 +299,62 @@
         <div class="menu-title"><img src="src/nomimono-logo.png"></div>
         <div class="menu-list">
           <dl>
-            <dt>エビス生ビール中</dt>
+            <dt id="ebisubeer">エビス生ビール中</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>サッポロ黒ラベル中瓶</dt>
+            <dt id="sapporokuro">サッポロ黒ラベル中瓶</dt>
             <dd>600円</dd>
           </dl>
           <dl>
-            <dt>ホッピー黒</dt>
+            <dt id="hoppikuro">ホッピー黒</dt>
             <dd>300円</dd>
           </dl>
           <dl>
-            <dt>ホッピー白</dt>
+            <dt id="hoppishiro">ホッピー白</dt>
             <dd>300円</dd>
           </dl>
           <dl>
-            <dt>ホッピー中身</dt>
+            <dt id="hoppinaka">ホッピー中身</dt>
             <dd>200円</dd>
           </dl>
           <dl>
-            <dt>ホッピー中身ダブル</dt>
+            <dt id="hoppinakadouble">ホッピー中身ダブル</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>角ハイボール</dt>
+            <dt id="highball">角ハイボール</dt>
             <dd>550円</dd>
           </dl>
           <dl>
-            <dt>ハーパーハイボール</dt>
+            <dt id="harperhigh">ハーパーハイボール</dt>
             <dd>600円</dd>
           </dl>
           <dl>
-            <dt>赤ハイボール</dt>
+            <dt id="redhigh">赤ハイボール</dt>
             <dd>600円</dd>
           </dl>
           <br> <!--行をかえる--->
           <br>
-          <h3>梅酒</h3>
+          <h3 id="umesh">梅酒</h3>
           <dl>
-            <dt>澄み渡る梅酒</dt>
+            <dt id="sumiwata">澄み渡る梅酒</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>白加賀梅酒</dt>
+            <dt id="shiroume">白加賀梅酒</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>赤梅酒</dt>
+            <dt id="akaume">赤梅酒</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>黒糖梅酒</dt>
+            <dt id="kokutoume">黒糖梅酒</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>梅酒玉露割り</dt>
+            <dt id="umegyoku">梅酒玉露割り</dt>
             <dd>500円</dd>
           </dl>
         </div>
@@ -378,74 +362,74 @@
           <br>
           <br>
           <dl>
-            <dt>サントリー角瓶</dt>
+            <dt id="santory">サントリー角瓶</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>サントリー白州</dt>
+            <dt id="hakushu">サントリー白州</dt>
             <dd>650円</dd>
           </dl>
           <dl>
-            <dt>ジョニーウォーカー(赤)</dt>
+            <dt id="johnnie">ジョニーウォーカー(赤)</dt>
             <dd>600円</dd>
           </dl>
           <dl>
-            <dt>I.Wハーバー</dt>
+            <dt id="IWharper">I.Wハーパー</dt>
             <dd>600円</dd>
           </dl>
           <dl>
-            <dt>焼酎ハイボール</dt>
+            <dt id="shochuhigh">焼酎ハイボール</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>びっきぃハイボール</dt>
+            <dt id="bikkihigh">びっきぃハイボール</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>生レモンハイボール</dt>
+            <dt id="freshlemonhigh">生レモンハイボール</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>生グレープフルーツハイボール</dt>
+            <dt id="grapefruithigh">生グレープフルーツハイボール</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>レモンハイボール</dt>
+            <dt id="lemonhigh">レモンハイボール</dt>
             <dd>400円</dd>
           </dl>
           <br> <!--行をかえる--->
           <br>
-          <h3>焼酎</h3>
+          <h3 id="shochu">焼酎</h3>
           <dl>
-            <dt>宝焼酎 純 (甲類)</dt>
+            <dt id="takara">宝焼酎 純 (甲類)</dt>
             <dd>400円(ボトル 2000円)</dd>
           </dl>
           <dl>
-            <dt>知心剣 (麦)</dt>
+            <dt id="shirashin">知心剣 (麦)</dt>
             <dd>500円(ボトル 2500円)</dd>
           </dl>
           <dl>
-            <dt>和ら麦 (麦)</dt>
+            <dt id="waramugi">和ら麦 (麦)</dt>
             <dd>500円(ボトル 2400円)</dd>
           </dl>
           <dl>
-            <dt>一刻者 (芋)</dt>
+            <dt id="ikkomon">一刻者 (芋)</dt>
             <dd>500円(ボトル 2500円)</dd>
           </dl>
           <dl>
-            <dt>からり芋 (芋)</dt>
+            <dt id="karari">からり芋 (芋)</dt>
             <dd>500円(ボトル 2400円)</dd>
           </dl>
           <dl>
-            <dt>黒糖酒 (黒糖)</dt>
+            <dt id="kokutoshu">黒糖酒 (黒糖)</dt>
             <dd>500円</dd>
           </dl>
           <dl>
-            <dt>瑞穂 (泡盛)</dt>
+            <dt id="mizuho">瑞穂 (泡盛)</dt>
             <dd>500円(ボトル2500円)</dd>
           </dl>
           <dl>
-            <dt>菊の露40度
+            <dt id="kikutsuyu">菊の露40度
             *ボトルもご用意しております</dt>
           </dl>
         </div>
@@ -453,38 +437,32 @@
           <br>
           <br>
           <dl>
-            <dt>シークワーサーハイボール</dt>
+            <dt id="citrushigh">シークワーサーハイボール</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>ワインハイボール(赤 or 白)</dt>
+            <dt id="winehigh">ワインハイボール(赤 or 白)</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>カルピスハイボール</dt>
+            <dt id="calpishigh">カルピスハイボール</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>ウコンウーロンハイ</dt>
+            <dt id="turmerichigh">ウコンウーロンハイ</dt>
             <dd>400円</dd>
           </dl>
           <dl>
-            <dt>玉露ハイ</dt>
+            <dt id="gyokurohigh">玉露ハイ</dt>
             <dd>450円</dd>
           </dl>
           <dl>
-            <dt>ジャスミンハイ</dt>
+            <dt id="jasminehigh">ジャスミンハイ</dt>
             <dd>450円</dd>
           </dl>
           <br> <!--行をかえる--->
           <br>
-          <br>
-          <br>
-          <h3>焼酎</h3>
-          <dl>
-            <dt>宝焼酎 純 (甲類)</dt>
-            <dd>400円(ボトル 2000円)</dd>
-          </dl>
+
         </div>
         <div class="btn-wrap">
           <a  href="#" class="btn btn-close btn-gray"><span>Close</span></a>
@@ -533,6 +511,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="index.js"></script>
+  <script src="menu.js"></script>
 </body>
 </html>

@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: 'Noto Serif JP', serif;
 }
-// font-family: 'Sawarabi Mincho', sans-serif;
 
 .top-items {
   margin: 0 auto;
@@ -87,6 +86,7 @@
       // font-size: 1.2rem;
       padding: 6px 5px;
       margin-bottom: 2rem;
+      letter-spacing: 3px;
     }
   }
   .corona-detail{
@@ -97,8 +97,8 @@
     div{
       margin-bottom: 50px;
       p{
-        letter-spacing: 2px;
-        // font-size: 1.5rem;
+        letter-spacing: 4px;
+        font-size: 1.2rem;
         i{
           color: $main-red;
         }
@@ -120,15 +120,17 @@
 .top-message-box {
   z-index: 100;
   color: white;
-  padding: 40px 10px;
+  padding: 100px 40px;
   h2{
     font-size: 3rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 4rem;
   }
   p{
     line-height: 50px;
-    // max-width: 770px;
     padding: 10px 0;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    margin-bottom: 3rem;
   }
 }
 
