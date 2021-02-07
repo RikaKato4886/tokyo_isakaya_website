@@ -1,5 +1,5 @@
 .photo-container {
-  padding: 30px 20px;
+  padding: 80px 20px;
   text-align: center;
   background-image: url(../src/jppaper-4.jpg);
   background-size: auto;
@@ -14,7 +14,11 @@
 
 .carousel {
   margin-top: 30px;
-  padding: 20px 3rem;
+  padding: 20px 4rem;
+}
+
+.carousel-inner {
+  padding: 4rem 4rem;
 }
 
 .detail-text{
@@ -22,14 +26,14 @@
 }
 
 .video-container{
-  padding: 35px 40px 50px 40px;
+  padding: 35px 5rem 50px 5rem;
   text-align: center;
   background-image: url(../src/jppaper-4.jpg);
   background-size: auto;
 }
 
 .card iframe {
-  height: 550px;
+  height: 800px;
 }
 
 .video-text{
@@ -44,12 +48,16 @@
     }
   }
 
+  .carousel-inner {
+    padding: 0.5rem 0.5rem;
+  }
+
   .card iframe {
-    height: 300px;
+    height: 400px;
   }
 
   .detail-text{
-    font-size: 14px;
+    font-size: 20px;
   }
 
 }

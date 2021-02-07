@@ -1,5 +1,6 @@
 .navbar {
-  background-color: #7a2813f3; }
+  background-color: #7a2813f3;
+  padding: 20px 10px; }
 
 .navbar-brand {
   color: white; }
@@ -18,6 +19,28 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Noto Serif JP', serif; }
+
+button:focus {
+  outline: none; }
+
+.changeLang {
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 2rem; }
+
+.lang {
+  font-size: 1.2rem;
+  color: #f0eaea;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.flag {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  outline: none; }
+
+.flag:focus {
+  outline: none; }
 
 .top-items {
   margin: 0 auto; }
@@ -89,7 +112,8 @@
       color: #7a2813f3;
       text-align: center;
       padding: 6px 5px;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      letter-spacing: 3px; }
   .corona-info-container .corona-detail {
     text-align: center;
     padding: 20px 20px;
@@ -98,7 +122,8 @@
     .corona-info-container .corona-detail div {
       margin-bottom: 50px; }
       .corona-info-container .corona-detail div p {
-        letter-spacing: 2px; }
+        letter-spacing: 4px;
+        font-size: 1.2rem; }
         .corona-info-container .corona-detail div p i {
           color: #7a2813f3; }
 
@@ -113,13 +138,16 @@
 .top-message-box {
   z-index: 100;
   color: white;
-  padding: 40px 10px; }
+  padding: 100px 40px; }
   .top-message-box h2 {
     font-size: 3rem;
-    margin-bottom: 3.2rem; }
+    margin-bottom: 4rem; }
   .top-message-box p {
     line-height: 50px;
-    padding: 10px 0; }
+    padding: 10px 0;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    margin-bottom: 3rem; }
 
 @media only screen and (max-width: 600px) {
   .top-text-box {
@@ -133,11 +161,11 @@
   .top-message-box {
     z-index: 100;
     color: white;
-    padding: 0px 0px; }
+    padding: 40px 0px; }
     .top-message-box h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       line-height: 50px;
-      margin-bottom: 20px; }
+      margin-bottom: 60px; }
     .top-message-box p {
       line-height: 50px;
       max-width: 770px;
@@ -160,7 +188,8 @@
 .foodmenu-container {
   padding: 80px 0;
   background-image: url(../src/jppaper-1.jpg);
-  background-size: auto; }
+  background-size: auto;
+  position: relative; }
   .foodmenu-container .foodmenu-title {
     text-align: center;
     margin-bottom: 30px; }
@@ -170,6 +199,23 @@
       letter-spacing: 10px;
       font-weight: 800;
       font-size: 3rem; }
+
+.custom-shape-divider-top-1612693150 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0; }
+
+.custom-shape-divider-top-1612693150 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 103px; }
+
+.custom-shape-divider-top-1612693150 .shape-fill {
+  fill: #DFDCD1; }
 
 .wrap {
   margin-bottom: 60px;
@@ -201,7 +247,10 @@
   padding-top: 30px; }
   .menu-detail h4 {
     font-weight: 600;
-    color: #7a2813f3; }
+    color: #7a2813f3;
+    font-size: 2.5rem; }
+  .menu-detail p {
+    font-size: 1rem; }
 
 .menu-detail-right {
   text-align: right; }
@@ -347,13 +396,18 @@
 
 @media only screen and (max-width: 600px) {
   .foodmenu-container .foodmenu-title h2 {
-    font-size: 2rem; }
+    font-size: 2.5rem;
+    padding: 0px 40px; }
 
   .wrap {
     margin-bottom: 60px;
     padding: 50px 0; }
     .wrap img {
       width: 85%; }
+    .wrap .menu-detail h4 {
+      font-size: 2rem; }
+    .wrap .menu-detail p {
+      font-size: 0.9rem; }
 
   .menu_area {
     padding: 30px 20px; }
@@ -379,7 +433,7 @@
   .btn-close {
     width: 100%; } }
 .photo-container {
-  padding: 30px 20px;
+  padding: 80px 20px;
   text-align: center;
   background-image: url(../src/jppaper-4.jpg);
   background-size: auto;
@@ -392,19 +446,22 @@
 
 .carousel {
   margin-top: 30px;
-  padding: 20px 3rem; }
+  padding: 20px 4rem; }
+
+.carousel-inner {
+  padding: 4rem 4rem; }
 
 .detail-text {
   font-size: 20px; }
 
 .video-container {
-  padding: 35px 40px 50px 40px;
+  padding: 35px 5rem 50px 5rem;
   text-align: center;
   background-image: url(../src/jppaper-4.jpg);
   background-size: auto; }
 
 .card iframe {
-  height: 550px; }
+  height: 800px; }
 
 .video-text {
   margin-top: 20px;
@@ -414,11 +471,14 @@
   .photo-container .text-center {
     font-size: 2rem; }
 
+  .carousel-inner {
+    padding: 0.5rem 0.5rem; }
+
   .card iframe {
-    height: 300px; }
+    height: 400px; }
 
   .detail-text {
-    font-size: 14px; } }
+    font-size: 20px; } }
 .modal {
   position: fixed;
   display: flex;
@@ -497,8 +557,10 @@
   grid-template-columns: 1fr 1fr;
   padding: 30px 30px; }
 
-.footer-one img {
-  margin-bottom: 20px; }
+.footer-one {
+  padding-left: 2rem; }
+  .footer-one img {
+    margin-bottom: 20px; }
 
 .footer-three {
   color: #eeecec;

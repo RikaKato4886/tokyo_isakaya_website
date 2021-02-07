@@ -2012,19 +2012,22 @@ var TranslationApp = /*#__PURE__*/function () {
           "footer_time1": "■営業時間:",
           "footer_time2": "[月-日] 17時-0時",
           "footer_card1": "■カード利用: ",
-          "footer_card2": "可（VISA,Master,AMEX,JCB,Diners）"
+          "footer_card2": "可（VISA,Master,AMEX,JCB,Diners）",
+          "home": "ホーム",
+          "oshinagaki": "お品書き",
+          "tempo": "店舗情報"
         });
       } else {
         this.polyglot.extend({
           "otsukare": "Hi, Welcome to Bikki",
-          "otsukare_p": "we are a small Isakaya at Akabane in Tokyo",
+          "otsukare_p": "we are a small Isakaya in Akabane, Tokyo",
           "corona1": "Measures against COVID-19",
           "corona_mask": " Wear Mask or Face-guard",
           "corona_space": "Create Social Distance",
           "corona_air": "Exchange Air Frequently",
           "corona_clean": "Clean Equipments Frequently",
           "youkoso_h2": "What is Bikki..?",
-          "youkoso_one": "What is your image of Akabane?",
+          "youkoso_one": "Have you ever been to Akabane?",
           "youkoso_two": "You might think that it is awkward to enter Izakaya in Akabane.",
           "youkoso_three": "We are located a little bit away from Akabane main road",
           "youkoso_four": "We are going to welcome you with warm service and Japanese style food!",
@@ -2045,7 +2048,10 @@ var TranslationApp = /*#__PURE__*/function () {
           "footer_time1": "■Open hour:",
           "footer_time2": "[Mon-Sun] 5PM-0AM",
           "footer_card1": "■Credit Card: ",
-          "footer_card2": "OK（VISA,Master,AMEX,JCB,Diners）"
+          "footer_card2": "OK（VISA,Master,AMEX,JCB,Diners）",
+          "home": "TOP",
+          "oshinagaki": "Menu",
+          "tempo": "Information"
         });
       }
     }
@@ -2123,6 +2129,12 @@ var TranslationApp = /*#__PURE__*/function () {
       text28.textContent = this.polyglot.t('footer_card1');
       var text29 = document.getElementById('footer_card2');
       text29.textContent = this.polyglot.t('footer_card2');
+      var text30 = document.getElementById('home');
+      text30.textContent = this.polyglot.t('home');
+      var text31 = document.getElementById('oshinagaki');
+      text31.textContent = this.polyglot.t('oshinagaki');
+      var text32 = document.getElementById('tempo');
+      text32.textContent = this.polyglot.t('tempo');
     }
   }]);
 
@@ -2164,53 +2176,6 @@ ScrollReveal({
   reset: true
 }).reveal('.wrap', {
   delay: 200
-}); ///////////////////  Modal  //////////////////
-// Get the modal
-
-var modals = document.querySelectorAll(".modal"); // Get the button that opens the modal
-
-var openModalBtns = document.querySelectorAll(".modal-open"); // Get btn-close
-
-var closeBtns = document.querySelectorAll(".btn-close"); //Get modal cover
-
-var modalCovers = document.querySelectorAll('.modal-cover'); //モーダルを閉じる処理
-
-var closeModal = function closeModal() {
-  modals.forEach(function (modal) {
-    modal.classList.add('is-close');
-    modal.classList.remove('is-open');
-    modal.classList.remove('is-close');
-  });
-}; // 外の範囲クリックでmodalを閉じる
-
-
-window.onclick = function (e) {
-  modalCovers.forEach(function (modalCover) {
-    if (e.target === modalCover) {
-      closeModal();
-    }
-  });
-}; // モーダル開くボタンクリックでmodalを開く
-
-
-openModalBtns.forEach(function (openModalBtn) {
-  openModalBtn.addEventListener('click', function () {
-    var clikedOpenBtn = openModalBtn.getAttribute('data-modal-open');
-    modals.forEach(function (modal) {
-      //もしも同じNumの場合
-      var modalDataNum = modal.getAttribute('data-modal');
-
-      if (modalDataNum === clikedOpenBtn) {
-        modal.classList.add('is-open');
-      }
-    });
-  });
-}); // グレーのcloseボタンクリックでmodalを閉じる
-
-closeBtns.forEach(function (closeBtn) {
-  closeBtn.addEventListener('click', function () {
-    closeModal();
-  });
 }); /////////////  Multilingual Setting  //////////
 
 {
@@ -2221,7 +2186,7 @@ closeBtns.forEach(function (closeBtn) {
   var button2 = document.getElementById('button2');
   button2.addEventListener("click", app.updateLocale);
 }
-},{"./translation.js":"translation.js"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./translation.js":"translation.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2249,7 +2214,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65026" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52410" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -2425,5 +2390,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/tokyo_isakaya_website.e31bb0bc.js.map
