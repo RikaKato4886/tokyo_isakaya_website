@@ -4,6 +4,7 @@
   // background-color: #f7f4f0;
   background-image: url(../src/jppaper-1.jpg);
   background-size: auto;
+  position: relative;
 
   .foodmenu-title{
     text-align: center;
@@ -16,6 +17,26 @@
       font-size: 3rem;
     }
   }
+}
+
+.custom-shape-divider-top-1612693150 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1612693150 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 103px;
+}
+
+.custom-shape-divider-top-1612693150 .shape-fill {
+  fill: #DFDCD1;
 }
 
 .wrap{
@@ -249,7 +270,8 @@
   .foodmenu-container{
     .foodmenu-title{
       h2{
-        font-size: 2rem;
+        font-size: 2.5rem;
+        padding: 0px 40px;
       }
     }
   }
@@ -259,6 +281,14 @@
     padding: 50px 0;
     img{
       width: 85%;
+    }
+    .menu-detail {
+      h4{
+        font-size: 2rem;
+      }
+      p{
+        font-size: 0.9rem;
+      }
     }
   }
 

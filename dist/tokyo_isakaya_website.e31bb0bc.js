@@ -2012,19 +2012,22 @@ var TranslationApp = /*#__PURE__*/function () {
           "footer_time1": "■営業時間:",
           "footer_time2": "[月-日] 17時-0時",
           "footer_card1": "■カード利用: ",
-          "footer_card2": "可（VISA,Master,AMEX,JCB,Diners）"
+          "footer_card2": "可（VISA,Master,AMEX,JCB,Diners）",
+          "home": "ホーム",
+          "oshinagaki": "お品書き",
+          "tempo": "店舗情報"
         });
       } else {
         this.polyglot.extend({
           "otsukare": "Hi, Welcome to Bikki",
-          "otsukare_p": "we are a small Isakaya at Akabane in Tokyo",
+          "otsukare_p": "we are a small Isakaya in Akabane, Tokyo",
           "corona1": "Measures against COVID-19",
           "corona_mask": " Wear Mask or Face-guard",
           "corona_space": "Create Social Distance",
           "corona_air": "Exchange Air Frequently",
           "corona_clean": "Clean Equipments Frequently",
           "youkoso_h2": "What is Bikki..?",
-          "youkoso_one": "What is your image of Akabane?",
+          "youkoso_one": "Have you ever been to Akabane?",
           "youkoso_two": "You might think that it is awkward to enter Izakaya in Akabane.",
           "youkoso_three": "We are located a little bit away from Akabane main road",
           "youkoso_four": "We are going to welcome you with warm service and Japanese style food!",
@@ -2045,7 +2048,10 @@ var TranslationApp = /*#__PURE__*/function () {
           "footer_time1": "■Open hour:",
           "footer_time2": "[Mon-Sun] 5PM-0AM",
           "footer_card1": "■Credit Card: ",
-          "footer_card2": "OK（VISA,Master,AMEX,JCB,Diners）"
+          "footer_card2": "OK（VISA,Master,AMEX,JCB,Diners）",
+          "home": "TOP",
+          "oshinagaki": "Menu",
+          "tempo": "Information"
         });
       }
     }
@@ -2123,7 +2129,12 @@ var TranslationApp = /*#__PURE__*/function () {
       text28.textContent = this.polyglot.t('footer_card1');
       var text29 = document.getElementById('footer_card2');
       text29.textContent = this.polyglot.t('footer_card2');
-      var text30 = document.getElementById('footer_card2');
+      var text30 = document.getElementById('home');
+      text30.textContent = this.polyglot.t('home');
+      var text31 = document.getElementById('oshinagaki');
+      text31.textContent = this.polyglot.t('oshinagaki');
+      var text32 = document.getElementById('tempo');
+      text32.textContent = this.polyglot.t('tempo');
     }
   }]);
 
@@ -2203,7 +2214,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62704" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52410" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
