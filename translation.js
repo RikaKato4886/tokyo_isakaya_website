@@ -40,9 +40,13 @@ class TranslationApp {
         "footer_time2":"[月-日] 17時-0時",
         "footer_card1":"■カード利用: ",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "footer_card2":"可（VISA,Master,AMEX,JCB）",
 =======
         "footer_card2":"可（VISA,Master,AMEX,JCB,Diners）",
+=======
+        "footer_card2":"可（VISA,Master,AMEX,JCB）",
+>>>>>>> develop
         "home":"ホーム",
         "oshinagaki": "お品書き",
         "tempo": "店舗情報",
@@ -62,7 +66,7 @@ class TranslationApp {
         "youkoso_two":"You might think that it is awkward to enter Izakaya in Akabane.",
         "youkoso_three":"We are located a little bit away from Akabane main road",
         "youkoso_four":"We are going to welcome you with warm service and Japanese style food!",
-        "osusume":"Bikki's Recommendation",
+        "osusume":"Bikki's Recommend",
         "recommend1":"Red Chicken Wings",
         "recommend1_detail":"Marinated with Special Soysource for more than 5 hours without Mirin and Sugar.",
         "recommend2":"Handmade Pickles",

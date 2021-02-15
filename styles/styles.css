@@ -92,7 +92,8 @@ button:focus {
   font-weight: 500;
   position: absolute;
   top: 45%;
-  right: 5%; }
+  right: 5%;
+  padding: 0 20px; }
   .top-text-box h2 {
     margin-bottom: 2rem;
     font-size: 3rem; }
@@ -396,7 +397,7 @@ button:focus {
 
 @media only screen and (max-width: 600px) {
   .foodmenu-container .foodmenu-title h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0px 40px; }
 
   .wrap {
@@ -433,7 +434,7 @@ button:focus {
   .btn-close {
     width: 100%; } }
 .photo-container {
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
   background-image: url(../src/jppaper-4.jpg);
   background-size: auto;
@@ -449,7 +450,7 @@ button:focus {
   padding: 20px 4rem; }
 
 .carousel-inner {
-  padding: 4rem 4rem; }
+  padding: 2rem 2rem; }
 
 .detail-text {
   font-size: 20px; }
@@ -460,25 +461,49 @@ button:focus {
   background-image: url(../src/jppaper-4.jpg);
   background-size: auto; }
 
-.card iframe {
-  height: 800px; }
+.iframe {
+  width: 856px;
+  height: 658px; }
 
 .video-text {
   margin-top: 20px;
   font-size: smaller; }
 
+@media only screen and (max-width: 1100px) {
+  .iframe {
+    width: 856px;
+    height: 658px; } }
+@media only screen and (max-width: 980px) {
+  .iframe {
+    width: 600px;
+    height: 400px; } }
+@media only screen and (max-width: 800px) {
+  .iframe {
+    width: 450px;
+    height: 317px; } }
 @media only screen and (max-width: 600px) {
   .photo-container .text-center {
     font-size: 2rem; }
 
+  .carousel {
+    padding: 20px 1rem; }
+
   .carousel-inner {
     padding: 0.5rem 0.5rem; }
 
-  .card iframe {
-    height: 400px; }
+  .video-container {
+    padding: 80px 20px; }
+
+  .iframe {
+    width: 350px;
+    height: 217px; }
 
   .detail-text {
     font-size: 20px; } }
+@media only screen and (max-width: 400px) {
+  .iframe {
+    width: 280px;
+    height: 217px; } }
 .modal {
   position: fixed;
   display: flex;

@@ -94,7 +94,7 @@ class TranslationApp2 {
         "footer_time1":"■営業時間:",
         "footer_time2":"[月-日] 17時-0時",
         "footer_card1":"■カード利用: ",
-        "footer_card2":"可（VISA,Master,AMEX,JCB,Diners）",
+        "footer_card2":"可（VISA,Master,AMEX,JCB）",
       });
     } else {
       this.polyglot.extend({

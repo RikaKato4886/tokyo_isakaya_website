@@ -26,10 +26,13 @@
   <!---NAV 1 -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand text-white" href="index.html"><img src="./src/bikki-logo.png" class="nav-logo d-inline-block align-top" alt=""></a>
-    <div>
-      <button id="button3" data-locale="ja">日本語</button>
-      <button id="button4" data-locale="en">英語</button>
+
+    <div class="changeLang">
+      <span class="lang"></span>
+      <button id="button1" data-locale="ja" class="flag">🇯🇵</button>
+      <button id="button2" data-locale="en" class="flag">🇺🇸</button>
     </div>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,13 +40,13 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link text-white" href="index.html">ホーム</a>
+          <a class="nav-link text-white" href="index.html" id="home">ホーム</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="menu.html" target="_blank">お品書き</a>
+          <a class="nav-link text-white" href="menu.html" target="_blank" id="oshinagaki">お品書き</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">店舗情報</a>
+          <a class="nav-link text-white" href="index.html#information" id="tempo">店舗情報</a>
         </li>
       </ul>
     </div>
@@ -501,7 +504,7 @@
       <br>
       <div class="info-details">
         <span id="footer_card1">■カード利用: </span>
-        <span id="footer_card2">可（VISA,Master,AMEX,JCB,Diners）</span>
+        <span id="footer_card2">可（VISA,Master,AMEX,JCB）</span>
       </div>
   </div>
   </section>

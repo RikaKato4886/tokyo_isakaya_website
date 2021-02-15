@@ -2067,7 +2067,7 @@ var TranslationApp2 = /*#__PURE__*/function () {
           "footer_time1": "■営業時間:",
           "footer_time2": "[月-日] 17時-0時",
           "footer_card1": "■カード利用: ",
-          "footer_card2": "可（VISA,Master,AMEX,JCB,Diners）"
+          "footer_card2": "可（VISA,Master,AMEX,JCB）"
         });
       } else {
         this.polyglot.extend({
@@ -2444,7 +2444,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52410" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53986" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
