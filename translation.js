@@ -39,18 +39,10 @@ class TranslationApp {
         "footer_time1":"■営業時間:",
         "footer_time2":"[月-日] 17時-0時",
         "footer_card1":"■カード利用: ",
-<<<<<<< HEAD
-<<<<<<< HEAD
         "footer_card2":"可（VISA,Master,AMEX,JCB）",
-=======
-        "footer_card2":"可（VISA,Master,AMEX,JCB,Diners）",
-=======
-        "footer_card2":"可（VISA,Master,AMEX,JCB）",
->>>>>>> develop
         "home":"ホーム",
         "oshinagaki": "お品書き",
         "tempo": "店舗情報",
->>>>>>> develop
       });
     } else {
       this.polyglot.extend({
